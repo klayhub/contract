@@ -9,12 +9,12 @@ import "../../ownership/Ownable.sol";
 // 1. hNFT 토큰 전송
 // 2. 가격 변경 
 
-contract timeSeller100 is Ownable {
+contract timeSeller is Ownable {
     using SafeMath for uint256;
     using Address for address;
 
     IKIP17Full public NFT;
-    uint256 public PRICE = 100;
+    uint256 public PRICE = 0;
     uint256 public startWhen = 0; // FIXME this should be a timestamp
 
     address public minter;
@@ -24,8 +24,10 @@ contract timeSeller100 is Ownable {
 
     event buy(address user, uint256 amount);
 
-    constructor (address nft) public {
+    constructor (address nft, uint256 _PRICE, uint256 _startWhen) public {
         NFT = IKIP17Full(nft);
+        PRICE = _PRICE;
+        startWhen = _startWhen;
         minter = msg.sender;
     }
 
