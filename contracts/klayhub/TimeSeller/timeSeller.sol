@@ -59,6 +59,10 @@ contract timeSeller is Ownable {
             NFT.safeTransferFrom(MINTER, account, tokenIdById[lastSaleId++]);
     }
 
+    function withdraw(uint256 amount) public onlyOwner {
+        PAYMENT.transfer(msg.sender, amount);
+    }
+
     modifier started {
         require(now >= STARTWHEN, "The sale has not started yet");
         _;
