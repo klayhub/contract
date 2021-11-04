@@ -5,7 +5,7 @@ const Seller = [
   artifacts.require("timeSeller5000"),
   artifacts.require("timeSeller10000"),
 ];
-const Price = [100, 1000, 5000, 10000];
+const Price = ["100000000", "1000000000", "5000000000", "10000000000"]; // KUSDT Decimal 6
 const Payment = "0x27aDA6e477ea291650FEbe785e56f7888Df41576"; // token contract address
 const StartWhen = 0; //timestamp
 

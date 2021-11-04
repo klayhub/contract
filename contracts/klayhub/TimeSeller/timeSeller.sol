@@ -2,6 +2,7 @@ pragma solidity ^0.5.0;
 
 import "../../token/KIP17/IKIP17Full.sol";
 import "../../token/KIP7/IKIP7.sol";
+import "../../token/KIP7/IKIP7Receiver.sol";
 import "../../math/SafeMath.sol";
 import "../../utils/Address.sol";
 import "../../ownership/Ownable.sol";
@@ -36,12 +37,13 @@ contract timeSeller is Ownable {
 
     function BuyTime(uint256 amount) public payable started {
         require(lastSaleId + amount <= lastRegisterId, "There are no more tokens to buy");
+        require(amount <= 10, "You can't buy at most 10 tokens at a time");
 
         uint256 _before = PAYMENT.balanceOf(address(this));
-        PAYMENT.safeTransferFrom(msg.sender, address(this), amount*PRICE);
+        PAYMENT.transferFrom(msg.sender, address(this), PRICE.mul(amount));
         uint256 _after = PAYMENT.balanceOf(address(this));
         uint256 value = _after.sub(_before);
-        require(value == PRICE * amount, "You must pay the correct amount");
+        require(value == PRICE.mul(amount), "You must pay the correct amount");
 
         for (uint256 i = 0; i < amount; i++) {
             _BuyTime(msg.sender);
@@ -54,7 +56,7 @@ contract timeSeller is Ownable {
     }
 
     function _BuyTime(address account) internal {
-            NFT.transferFrom(MINTER, account, tokenIdById[lastSaleId++]);
+            NFT.safeTransferFrom(MINTER, account, tokenIdById[lastSaleId++]);
     }
 
     modifier started {
