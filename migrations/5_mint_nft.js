@@ -39,16 +39,22 @@ module.exports = async function (deployer) {
         const _version = version.toString().padStart(5, "0");
         const tokenId = `${_version}${_price}${_number}${_amount}`;
         console.log("TokenID", tokenId.replace(/(^0+)/, ""));
+        console.log("Minting");
         try {
           await nft.mintWithTokenURI(
             minter,
             tokenId,
             `${metadataURI}${tokenId}.json`
           );
+        } catch (e) {
+          console.log("Token Already Exists", tokenId);
+        }
+        console.log("Registering");
+        try {
           nft.approve(seller[p].address, tokenId);
           seller[p].register(tokenId);
         } catch (e) {
-          console.log("Token Already Exists", tokenId);
+          console.log("Token Register failed", tokenId);
         }
       }
     }

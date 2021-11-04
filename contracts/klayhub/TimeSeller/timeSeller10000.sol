@@ -7,7 +7,7 @@ import "./timeSeller.sol";
 // 2. 가격 변경 
 
 contract timeSeller10000 is timeSeller {
-    constructor (address nft, uint256 _PRICE, uint256 _startWhen) public timeSeller(nft, _PRICE, _startWhen) {
+    constructor (address _NFT, address _PAYMENT, uint256 _PRICE, uint256 _STARTWHEN) public timeSeller(_NFT, _PAYMENT, _PRICE, _STARTWHEN) {
         // solhint-disable-previous-line no-empty-blocks
     }
 }
