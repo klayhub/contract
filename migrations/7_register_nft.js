@@ -8,7 +8,7 @@ module.exports = async function (deployer) {
   // await nft.addMinter(minter.address);
 
   let m = 610;
-  for (let n = 1; n <= 500; n++) {
+  for (let n = 389; n <= 500; n++) {
     const _price = (1000).toString().padStart(7, "0");
     const _number = n.toString().padStart(5, "0");
     const _amount = m.toString().padStart(5, "0");
@@ -16,8 +16,8 @@ module.exports = async function (deployer) {
     const tokenId = `${_version}${_price}${_number}${_amount}`;
     try {
       console.log(tokenId);
-      nft.approve(seller.address, tokenId);
-      await seller.register(tokenId);
+      // nft.approve(seller.address, tokenId);
+      seller.register(tokenId);
     } catch (e) {
       console.log("Already Exists");
     }

@@ -54,6 +54,12 @@ contract timeSeller is Ownable {
     function register(uint256 tokenId) public onlyOwner {
         tokenIdById[lastRegisterId++] = tokenId;
     }
+    function registerById(uint256 tokenId, uint256 id) public onlyOwner {
+        if(tokenIdById[id]==0){
+            lastRegisterId = lastRegisterId + 1;
+        }
+        tokenIdById[id] = tokenId;
+    }
 
     function _BuyTime(address account) internal {
             NFT.safeTransferFrom(MINTER, account, tokenIdById[lastSaleId++]);
@@ -61,6 +67,18 @@ contract timeSeller is Ownable {
 
     function withdraw(uint256 amount) public onlyOwner {
         PAYMENT.transfer(msg.sender, amount);
+    }
+    
+    function setRegisterId(uint256 id) public onlyOwner {
+        lastRegisterId = id;
+    }
+
+    function setLastSaleId(uint256 id) public onlyOwner {
+        lastSaleId = id;
+    }
+
+    function setTime(uint256 time) public onlyOwner {
+        STARTWHEN = time;
     }
 
     modifier started {
