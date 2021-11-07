@@ -24,7 +24,7 @@ module.exports = async function (deployer) {
   const nft = await kip17.deployed();
   const seller = [
     // await Seller[0].deployed(),
-    await Seller[1].deployed(),
+    await Seller[0].deployed(),
     // await Seller[2].deployed(),
     // await Seller[3].deployed(),
   ];
