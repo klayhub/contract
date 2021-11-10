@@ -36,7 +36,8 @@ contract timeSellerForFailed is Ownable {
     function BuyTime(uint256 amount) public payable started {
         require(lastSaleId + amount <= lastRegisterId, "There are no more tokens to buy");
         require(amount <= addressCanBuy[msg.sender], "You can't buy at most specific tokens at a time");
-
+        addressCanBuy[msg.sender] -= amount;
+        
         uint256 _before = PAYMENT.balanceOf(address(this));
         PAYMENT.transferFrom(msg.sender, address(this), PRICE.mul(amount));
         uint256 _after = PAYMENT.balanceOf(address(this));
