@@ -23,6 +23,7 @@ contract timeSeller is Ownable {
 
     uint256 public lastSaleId=0;
     uint256 public lastRegisterId=0;
+    uint256 public limitPerSale = 10;
     mapping (uint256 => uint256) public tokenIdById;
 
     event buy(address user, uint256 amount);
@@ -37,7 +38,7 @@ contract timeSeller is Ownable {
 
     function BuyTime(uint256 amount) public payable started {
         require(lastSaleId + amount <= lastRegisterId, "There are no more tokens to buy");
-        require(amount <= 10, "You can't buy at most 10 tokens at a time");
+        require(amount <= limitPerSale, "You can't buy at most limited amount at a time");
 
         uint256 _before = PAYMENT.balanceOf(address(this));
         PAYMENT.transferFrom(msg.sender, address(this), PRICE.mul(amount));
@@ -75,6 +76,10 @@ contract timeSeller is Ownable {
 
     function setLastSaleId(uint256 id) public onlyOwner {
         lastSaleId = id;
+    }
+
+    function setSaleId(uint256 amount) public onlyOwner {
+        limitPerSale = amount;
     }
 
     function setTime(uint256 time) public onlyOwner {

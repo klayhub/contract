@@ -79,25 +79,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"destroy\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * > Note: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/humblefirm/Github/contract/contracts/lifecycle/SelfDestructible.sol\":\"SelfDestructible\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/humblefirm/Github/contract/contracts/lifecycle/SelfDestructible.sol\":{\"keccak256\":\"0x23cf95913b516d524574b56df268018584f1c31a7f012beaf1bf352ccc2178fc\",\"urls\":[\"bzzr://ad425019b4b5c5ad46fef57239e6090e5a074b82f89547e99c288bb5e02bf7a9\"]},\"/Users/humblefirm/Github/contract/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0xc9b4f8e4eeaab9ef9d0f83e2ab2ba2b0808115cf5e5d1e4d1a6bb94b0753b495\",\"urls\":[\"bzzr://f5b1c257ce6b6586c16aa6c515d0bf9f7f53bf870fff3abf4224b072ec11a447\"]}},\"version\":1}",
-  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a361058f806100cf6000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c8063715018a61461005c57806383197ef0146100665780638da5cb5b146100705780638f32d59b146100ba578063f2fde38b146100dc575b600080fd5b610064610120565b005b61006e610259565b005b6100786102f3565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100c261031c565b604051808215151515815260200191505060405180910390f35b61011e600480360360208110156100f257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610373565b005b61012861031c565b61019a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b61026161031c565b6102d3576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b6102db6102f3565b73ffffffffffffffffffffffffffffffffffffffff16ff5b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b61037b61031c565b6103ed576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b6103f6816103f9565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561047f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602681526020018061053e6026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a165627a7a72305820e490b9ec4f5deeefdbd1fae1fc2d424579e9d35474cca2919133db1a4997f6020029",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c8063715018a61461005c57806383197ef0146100665780638da5cb5b146100705780638f32d59b146100ba578063f2fde38b146100dc575b600080fd5b610064610120565b005b61006e610259565b005b6100786102f3565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100c261031c565b604051808215151515815260200191505060405180910390f35b61011e600480360360208110156100f257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610373565b005b61012861031c565b61019a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b61026161031c565b6102d3576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b6102db6102f3565b73ffffffffffffffffffffffffffffffffffffffff16ff5b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b61037b61031c565b6103ed576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b6103f6816103f9565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561047f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602681526020018061053e6026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a165627a7a72305820e490b9ec4f5deeefdbd1fae1fc2d424579e9d35474cca2919133db1a4997f6020029",
-  "sourceMap": "61:124:17:-;;;674:10:42;665:6;;:19;;;;;;;;;;;;;;;;;;732:6;;;;;;;;;;;699:40;;728:1;699:40;;;;;;;;;;;;61:124:17;;;;;;",
-  "deployedSourceMap": "61:124:17:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:124:17;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1615:137:42;;;:::i;:::-;;104:75:17;;;:::i;:::-;;822:85:42;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1181:90;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1901:115;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1901:115:42;;;;;;;;;;;;;;;;;;;:::i;:::-;;1615:137;1034:9;:7;:9::i;:::-;1026:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1713:1;1676:40;;1697:6;;;;;;;;;;;1676:40;;;;;;;;;;;;1743:1;1726:6;;:19;;;;;;;;;;;;;;;;;;1615:137::o;104:75:17:-;1034:9:42;:7;:9::i;:::-;1026:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;164:7:17;:5;:7::i;:::-;151:21;;;822:85:42;860:15;894:6;;;;;;;;;;;887:13;;822:85;:::o;1181:90::-;1221:4;1258:6;;;;;;;;;;;1244:20;;:10;:20;;;1237:27;;1181:90;:::o;1901:115::-;1034:9;:7;:9::i;:::-;1026:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1981:28;2000:8;1981:18;:28::i;:::-;1901:115;:::o;2117:233::-;2218:1;2198:22;;:8;:22;;;;2190:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2307:8;2278:38;;2299:6;;;;;;;;;;;2278:38;;;;;;;;;;;;2335:8;2326:6;;:17;;;;;;;;;;;;;;;;;;2117:233;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"destroy\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.     * > Note: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/gimseontae/Desktop/project/contract/contracts/lifecycle/SelfDestructible.sol\":\"SelfDestructible\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gimseontae/Desktop/project/contract/contracts/lifecycle/SelfDestructible.sol\":{\"keccak256\":\"0x23cf95913b516d524574b56df268018584f1c31a7f012beaf1bf352ccc2178fc\",\"urls\":[\"bzzr://ad425019b4b5c5ad46fef57239e6090e5a074b82f89547e99c288bb5e02bf7a9\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/ownership/Ownable.sol\":{\"keccak256\":\"0xc9b4f8e4eeaab9ef9d0f83e2ab2ba2b0808115cf5e5d1e4d1a6bb94b0753b495\",\"urls\":[\"bzzr://f5b1c257ce6b6586c16aa6c515d0bf9f7f53bf870fff3abf4224b072ec11a447\"]}},\"version\":1}",
+  "bytecode": "0x6080604052336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16600073ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a361058f806100cf6000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c8063715018a61461005c57806383197ef0146100665780638da5cb5b146100705780638f32d59b146100ba578063f2fde38b146100dc575b600080fd5b610064610120565b005b61006e610259565b005b6100786102f3565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100c261031c565b604051808215151515815260200191505060405180910390f35b61011e600480360360208110156100f257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610373565b005b61012861031c565b61019a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b61026161031c565b6102d3576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b6102db6102f3565b73ffffffffffffffffffffffffffffffffffffffff16ff5b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b61037b61031c565b6103ed576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b6103f6816103f9565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561047f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602681526020018061053e6026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a165627a7a723058208e13c8a798435f1dc47f78f58546363762c81239052c288d6a6254820eb7d1b90029",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c8063715018a61461005c57806383197ef0146100665780638da5cb5b146100705780638f32d59b146100ba578063f2fde38b146100dc575b600080fd5b610064610120565b005b61006e610259565b005b6100786102f3565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6100c261031c565b604051808215151515815260200191505060405180910390f35b61011e600480360360208110156100f257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610373565b005b61012861031c565b61019a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a360008060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550565b61026161031c565b6102d3576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b6102db6102f3565b73ffffffffffffffffffffffffffffffffffffffff16ff5b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614905090565b61037b61031c565b6103ed576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260208152602001807f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e657281525060200191505060405180910390fd5b6103f6816103f9565b50565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561047f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602681526020018061053e6026913960400191505060405180910390fd5b8073ffffffffffffffffffffffffffffffffffffffff166000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a3806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505056fe4f776e61626c653a206e6577206f776e657220697320746865207a65726f2061646472657373a165627a7a723058208e13c8a798435f1dc47f78f58546363762c81239052c288d6a6254820eb7d1b90029",
+  "sourceMap": "61:124:18:-;;;674:10:43;665:6;;:19;;;;;;;;;;;;;;;;;;732:6;;;;;;;;;;;699:40;;728:1;699:40;;;;;;;;;;;;61:124:18;;;;;;",
+  "deployedSourceMap": "61:124:18:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:124:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1615:137:43;;;:::i;:::-;;104:75:18;;;:::i;:::-;;822:85:43;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1181:90;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;1901:115;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;1901:115:43;;;;;;;;;;;;;;;;;;;:::i;:::-;;1615:137;1034:9;:7;:9::i;:::-;1026:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1713:1;1676:40;;1697:6;;;;;;;;;;;1676:40;;;;;;;;;;;;1743:1;1726:6;;:19;;;;;;;;;;;;;;;;;;1615:137::o;104:75:18:-;1034:9:43;:7;:9::i;:::-;1026:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;164:7:18;:5;:7::i;:::-;151:21;;;822:85:43;860:15;894:6;;;;;;;;;;;887:13;;822:85;:::o;1181:90::-;1221:4;1258:6;;;;;;;;;;;1244:20;;:10;:20;;;1237:27;;1181:90;:::o;1901:115::-;1034:9;:7;:9::i;:::-;1026:54;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1981:28;2000:8;1981:18;:28::i;:::-;1901:115;:::o;2117:233::-;2218:1;2198:22;;:8;:22;;;;2190:73;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2307:8;2278:38;;2299:6;;;;;;;;;;;2278:38;;;;;;;;;;;;2335:8;2326:6;;:17;;;;;;;;;;;;;;;;;;2117:233;:::o",
   "source": "pragma solidity ^0.5.0;\n\nimport \"../ownership/Ownable.sol\";\n\ncontract SelfDestructible is Ownable {\n    function destroy() public onlyOwner  {\n        selfdestruct(owner());\n    }    \n}\n",
-  "sourcePath": "/Users/humblefirm/Github/contract/contracts/lifecycle/SelfDestructible.sol",
+  "sourcePath": "/Users/gimseontae/Desktop/project/contract/contracts/lifecycle/SelfDestructible.sol",
   "ast": {
-    "absolutePath": "/Users/humblefirm/Github/contract/contracts/lifecycle/SelfDestructible.sol",
+    "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/lifecycle/SelfDestructible.sol",
     "exportedSymbols": {
       "SelfDestructible": [
-        1589
+        1923
       ]
     },
-    "id": 1590,
+    "id": 1924,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1574,
+        "id": 1908,
         "literals": [
           "solidity",
           "^",
@@ -105,16 +105,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:17"
+        "src": "0:23:18"
       },
       {
-        "absolutePath": "/Users/humblefirm/Github/contract/contracts/ownership/Ownable.sol",
+        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/ownership/Ownable.sol",
         "file": "../ownership/Ownable.sol",
-        "id": 1575,
+        "id": 1909,
         "nodeType": "ImportDirective",
-        "scope": 1590,
-        "sourceUnit": 3036,
-        "src": "25:34:17",
+        "scope": 1924,
+        "sourceUnit": 3370,
+        "src": "25:34:18",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -124,40 +124,40 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1576,
+              "id": 1910,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3035,
-              "src": "90:7:17",
+              "referencedDeclaration": 3369,
+              "src": "90:7:18",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$3035",
+                "typeIdentifier": "t_contract$_Ownable_$3369",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 1577,
+            "id": 1911,
             "nodeType": "InheritanceSpecifier",
-            "src": "90:7:17"
+            "src": "90:7:18"
           }
         ],
         "contractDependencies": [
-          3035
+          3369
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1589,
+        "id": 1923,
         "linearizedBaseContracts": [
-          1589,
-          3035
+          1923,
+          3369
         ],
         "name": "SelfDestructible",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1587,
+              "id": 1921,
               "nodeType": "Block",
-              "src": "141:38:17",
+              "src": "141:38:18",
               "statements": [
                 {
                   "expression": {
@@ -168,18 +168,18 @@
                         "arguments": [],
                         "expression": {
                           "argumentTypes": [],
-                          "id": 1583,
+                          "id": 1917,
                           "name": "owner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2958,
-                          "src": "164:5:17",
+                          "referencedDeclaration": 3292,
+                          "src": "164:5:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$__$returns$_t_address_payable_$",
                             "typeString": "function () view returns (address payable)"
                           }
                         },
-                        "id": 1584,
+                        "id": 1918,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -187,7 +187,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "164:7:17",
+                        "src": "164:7:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -201,18 +201,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 1582,
+                      "id": 1916,
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7512,
-                      "src": "151:12:17",
+                      "referencedDeclaration": 7846,
+                      "src": "151:12:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
                         "typeString": "function (address payable)"
                       }
                     },
-                    "id": 1585,
+                    "id": 1919,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -220,82 +220,82 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "151:21:17",
+                    "src": "151:21:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1586,
+                  "id": 1920,
                   "nodeType": "ExpressionStatement",
-                  "src": "151:21:17"
+                  "src": "151:21:18"
                 }
               ]
             },
             "documentation": null,
-            "id": 1588,
+            "id": 1922,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 1580,
+                "id": 1914,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1579,
+                  "id": 1913,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2968,
-                  "src": "130:9:17",
+                  "referencedDeclaration": 3302,
+                  "src": "130:9:18",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "130:9:17"
+                "src": "130:9:18"
               }
             ],
             "name": "destroy",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1578,
+              "id": 1912,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "120:2:17"
+              "src": "120:2:18"
             },
             "returnParameters": {
-              "id": 1581,
+              "id": 1915,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "141:0:17"
+              "src": "141:0:18"
             },
-            "scope": 1589,
-            "src": "104:75:17",
+            "scope": 1923,
+            "src": "104:75:18",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1590,
-        "src": "61:124:17"
+        "scope": 1924,
+        "src": "61:124:18"
       }
     ],
-    "src": "0:186:17"
+    "src": "0:186:18"
   },
   "legacyAST": {
-    "absolutePath": "/Users/humblefirm/Github/contract/contracts/lifecycle/SelfDestructible.sol",
+    "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/lifecycle/SelfDestructible.sol",
     "exportedSymbols": {
       "SelfDestructible": [
-        1589
+        1923
       ]
     },
-    "id": 1590,
+    "id": 1924,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1574,
+        "id": 1908,
         "literals": [
           "solidity",
           "^",
@@ -303,16 +303,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:17"
+        "src": "0:23:18"
       },
       {
-        "absolutePath": "/Users/humblefirm/Github/contract/contracts/ownership/Ownable.sol",
+        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/ownership/Ownable.sol",
         "file": "../ownership/Ownable.sol",
-        "id": 1575,
+        "id": 1909,
         "nodeType": "ImportDirective",
-        "scope": 1590,
-        "sourceUnit": 3036,
-        "src": "25:34:17",
+        "scope": 1924,
+        "sourceUnit": 3370,
+        "src": "25:34:18",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -322,40 +322,40 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1576,
+              "id": 1910,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3035,
-              "src": "90:7:17",
+              "referencedDeclaration": 3369,
+              "src": "90:7:18",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$3035",
+                "typeIdentifier": "t_contract$_Ownable_$3369",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 1577,
+            "id": 1911,
             "nodeType": "InheritanceSpecifier",
-            "src": "90:7:17"
+            "src": "90:7:18"
           }
         ],
         "contractDependencies": [
-          3035
+          3369
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1589,
+        "id": 1923,
         "linearizedBaseContracts": [
-          1589,
-          3035
+          1923,
+          3369
         ],
         "name": "SelfDestructible",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1587,
+              "id": 1921,
               "nodeType": "Block",
-              "src": "141:38:17",
+              "src": "141:38:18",
               "statements": [
                 {
                   "expression": {
@@ -366,18 +366,18 @@
                         "arguments": [],
                         "expression": {
                           "argumentTypes": [],
-                          "id": 1583,
+                          "id": 1917,
                           "name": "owner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 2958,
-                          "src": "164:5:17",
+                          "referencedDeclaration": 3292,
+                          "src": "164:5:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$__$returns$_t_address_payable_$",
                             "typeString": "function () view returns (address payable)"
                           }
                         },
-                        "id": 1584,
+                        "id": 1918,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -385,7 +385,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "164:7:17",
+                        "src": "164:7:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -399,18 +399,18 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 1582,
+                      "id": 1916,
                       "name": "selfdestruct",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7512,
-                      "src": "151:12:17",
+                      "referencedDeclaration": 7846,
+                      "src": "151:12:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_selfdestruct_nonpayable$_t_address_payable_$returns$__$",
                         "typeString": "function (address payable)"
                       }
                     },
-                    "id": 1585,
+                    "id": 1919,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -418,69 +418,69 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "151:21:17",
+                    "src": "151:21:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1586,
+                  "id": 1920,
                   "nodeType": "ExpressionStatement",
-                  "src": "151:21:17"
+                  "src": "151:21:18"
                 }
               ]
             },
             "documentation": null,
-            "id": 1588,
+            "id": 1922,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 1580,
+                "id": 1914,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1579,
+                  "id": 1913,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2968,
-                  "src": "130:9:17",
+                  "referencedDeclaration": 3302,
+                  "src": "130:9:18",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "130:9:17"
+                "src": "130:9:18"
               }
             ],
             "name": "destroy",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1578,
+              "id": 1912,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "120:2:17"
+              "src": "120:2:18"
             },
             "returnParameters": {
-              "id": 1581,
+              "id": 1915,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "141:0:17"
+              "src": "141:0:18"
             },
-            "scope": 1589,
-            "src": "104:75:17",
+            "scope": 1923,
+            "src": "104:75:18",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1590,
-        "src": "61:124:17"
+        "scope": 1924,
+        "src": "61:124:18"
       }
     ],
-    "src": "0:186:17"
+    "src": "0:186:18"
   },
   "compiler": {
     "name": "solc",
@@ -488,7 +488,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.11",
-  "updatedAt": "2021-11-07T12:41:23.323Z",
+  "updatedAt": "2021-11-10T06:27:09.340Z",
   "devdoc": {
     "methods": {
       "isOwner()": {

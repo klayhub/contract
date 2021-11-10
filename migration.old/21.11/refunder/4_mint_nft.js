@@ -30,31 +30,21 @@ module.exports = async function (deployer) {
   const minter = await nftMinter.deployed();
   // await nft.addMinter(minter.address);
 
-  // console.log(deployer.networks[deployer.network].from);
   for (let i = 0; i < mintAmount.length; i++)
     for (let j = 0; j < mintAmount[i].length; j++) {
       let m = mintAmount[i][j];
       for (let n = 1; n <= m; n += 21)
         try {
           if (completed[i][j] >= n) continue;
-          const _tokenId = tokenId(1, mintPrice[i], n, m);
-          console.log(_tokenId);
-          if (
-            (await nft.tokenURI(_tokenId)) ==
-            `https://nft.klayhub.com/metadata/${_tokenId}.json`
-          ) {
-            console.log("Already exists");
-            continue;
-          }
-        } catch (e) {
-          console.log("Minting..");
-
-          minter.mint(
+          console.log(tokenId(1, mintPrice[i], n, m));
+          await minter.mint(
             "0x2ccd2dfc4e6dd26945cfa8048b3b03a2ed81628d",
             mintPrice[i],
             n,
             m
           );
+        } catch (e) {
+          console.log("Already Exists");
         }
     }
 };

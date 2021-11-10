@@ -1,15 +1,15 @@
 {
   "contractName": "KIP13Checker",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Library used to query support of an interface declared via `IKIP13`. * Note that these functions return the actual result of the query: they do not `revert` if an interface is not supported. It is up to the caller to decide what to do in these cases.\",\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/humblefirm/Github/contract/contracts/introspection/KIP13Checker.sol\":\"KIP13Checker\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/humblefirm/Github/contract/contracts/introspection/KIP13Checker.sol\":{\"keccak256\":\"0x746dc63720a0aaeb20fbb4a7c07aa5372a5d6af801a06db18d9d5d456337cb1a\",\"urls\":[\"bzzr://b9641d81140e4ae45e77fe02a72986e76e6c6c9f3c902f33454fb2f57f2e55b1\"]}},\"version\":1}",
-  "bytecode": "0x604c6023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea165627a7a72305820bf02fa6576fc8f34ce2602692a705649447360ccb81dc48069450c60d5a48d4e0029",
-  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea165627a7a72305820bf02fa6576fc8f34ce2602692a705649447360ccb81dc48069450c60d5a48d4e0029",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"details\":\"Library used to query support of an interface declared via `IKIP13`. * Note that these functions return the actual result of the query: they do not `revert` if an interface is not supported. It is up to the caller to decide what to do in these cases.\",\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/gimseontae/Desktop/project/contract/contracts/introspection/KIP13Checker.sol\":\"KIP13Checker\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gimseontae/Desktop/project/contract/contracts/introspection/KIP13Checker.sol\":{\"keccak256\":\"0x746dc63720a0aaeb20fbb4a7c07aa5372a5d6af801a06db18d9d5d456337cb1a\",\"urls\":[\"bzzr://b9641d81140e4ae45e77fe02a72986e76e6c6c9f3c902f33454fb2f57f2e55b1\"]}},\"version\":1}",
+  "bytecode": "0x604c6023600b82828239805160001a607314601657fe5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea165627a7a72305820e8ade0e9f75307dcd498b2cbbe76bbd7590216bf989bf61c7069dab7c91926290029",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea165627a7a72305820e8ade0e9f75307dcd498b2cbbe76bbd7590216bf989bf61c7069dab7c91926290029",
   "sourceMap": "302:4729:8:-;;132:2:-1;166:7;155:9;146:7;137:37;255:7;249:14;246:1;241:23;235:4;232:33;222:2;;269:9;222:2;293:9;290:1;283:20;323:4;314:7;306:22;347:7;338;331:24",
   "deployedSourceMap": "302:4729:8:-;;;;;;;;",
   "source": "pragma solidity ^0.5.0;\n\n/**\n * @dev Library used to query support of an interface declared via `IKIP13`.\n *\n * Note that these functions return the actual result of the query: they do not\n * `revert` if an interface is not supported. It is up to the caller to decide\n * what to do in these cases.\n */\nlibrary KIP13Checker {\n    // As per the EIP-165 spec, no interface should ever match 0xffffffff\n    bytes4 private constant _INTERFACE_ID_INVALID = 0xffffffff;\n\n    /*\n     * bytes4(keccak256('supportsInterface(bytes4)')) == 0x01ffc9a7\n     */\n    bytes4 private constant _INTERFACE_ID_KIP13 = 0x01ffc9a7;\n\n    /**\n     * @dev Returns true if `account` supports the `IKIP13` interface,\n     */\n    function _supportsKIP13(address account) internal view returns (bool) {\n        // Any contract that implements KIP13 must explicitly indicate support of\n        // InterfaceId_KIP13 and explicitly indicate non-support of InterfaceId_Invalid\n        return _supportsKIP13Interface(account, _INTERFACE_ID_KIP13) &&\n            !_supportsKIP13Interface(account, _INTERFACE_ID_INVALID);\n    }\n\n    /**\n     * @dev Returns true if `account` supports the interface defined by\n     * `interfaceId`. Support for `IKIP13` itself is queried automatically.\n     *\n     * See `IKIP13.supportsInterface`.\n     */\n    function _supportsInterface(address account, bytes4 interfaceId) internal view returns (bool) {\n        // query support of both KIP13 as per the spec and support of _interfaceId\n        return _supportsKIP13(account) &&\n            _supportsKIP13Interface(account, interfaceId);\n    }\n\n    /**\n     * @dev Returns true if `account` supports all the interfaces defined in\n     * `interfaceIds`. Support for `IKIP13` itself is queried automatically.\n     *\n     * Batch-querying can lead to gas savings by skipping repeated checks for\n     * `IKIP13` support.\n     *\n     * See `IKIP13.supportsInterface`.\n     */\n    function _supportsAllInterfaces(address account, bytes4[] memory interfaceIds) internal view returns (bool) {\n        // query support of KIP13 itself\n        if (!_supportsKIP13(account)) {\n            return false;\n        }\n\n        // query support of each interface in _interfaceIds\n        for (uint256 i = 0; i < interfaceIds.length; i++) {\n            if (!_supportsKIP13Interface(account, interfaceIds[i])) {\n                return false;\n            }\n        }\n\n        // all interfaces supported\n        return true;\n    }\n\n    /**\n     * @notice Query if a contract implements an interface, does not check KIP13 support\n     * @param account The address of the contract to query for support of an interface\n     * @param interfaceId The interface identifier, as specified in ERC-165\n     * @return true if the contract at account indicates support of the interface with\n     * identifier interfaceId, false otherwise\n     * @dev Assumes that account contains a contract that supports KIP13, otherwise\n     * the behavior of this method is undefined. This precondition can be checked\n     * with the `supportsKIP13` method in this library.\n     * Interface identification is specified in ERC-165.\n     */\n    function _supportsKIP13Interface(address account, bytes4 interfaceId) private view returns (bool) {\n        // success determines whether the staticcall succeeded and result determines\n        // whether the contract at account indicates support of _interfaceId\n        (bool success, bool result) = _callKIP13SupportsInterface(account, interfaceId);\n\n        return (success && result);\n    }\n\n    /**\n     * @notice Calls the function with selector 0x01ffc9a7 (KIP13) and suppresses throw\n     * @param account The address of the contract to query for support of an interface\n     * @param interfaceId The interface identifier, as specified in ERC-165\n     * @return success true if the STATICCALL succeeded, false otherwise\n     * @return result true if the STATICCALL succeeded and the contract at account\n     * indicates support of the interface with identifier interfaceId, false otherwise\n     */\n    function _callKIP13SupportsInterface(address account, bytes4 interfaceId)\n        private\n        view\n        returns (bool success, bool result)\n    {\n        bytes memory encodedParams = abi.encodeWithSelector(_INTERFACE_ID_KIP13, interfaceId);\n\n        // solhint-disable-next-line no-inline-assembly\n        assembly {\n            let encodedParams_data := add(0x20, encodedParams)\n            let encodedParams_size := mload(encodedParams)\n\n            let output := mload(0x40)    // Find empty storage location using \"free memory pointer\"\n            mstore(output, 0x0)\n\n            success := staticcall(\n                30000,                   // 30k gas\n                account,                 // To addr\n                encodedParams_data,\n                encodedParams_size,\n                output,\n                0x20                     // Outputs are 32 bytes long\n            )\n\n            result := mload(output)      // Load the result\n        }\n    }\n}\n",
-  "sourcePath": "/Users/humblefirm/Github/contract/contracts/introspection/KIP13Checker.sol",
+  "sourcePath": "/Users/gimseontae/Desktop/project/contract/contracts/introspection/KIP13Checker.sol",
   "ast": {
-    "absolutePath": "/Users/humblefirm/Github/contract/contracts/introspection/KIP13Checker.sol",
+    "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/introspection/KIP13Checker.sol",
     "exportedSymbols": {
       "KIP13Checker": [
         600
@@ -1597,7 +1597,7 @@
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7491,
+                        "referencedDeclaration": 7825,
                         "src": "4244:3:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_abi",
@@ -1830,7 +1830,7 @@
     "src": "0:5032:8"
   },
   "legacyAST": {
-    "absolutePath": "/Users/humblefirm/Github/contract/contracts/introspection/KIP13Checker.sol",
+    "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/introspection/KIP13Checker.sol",
     "exportedSymbols": {
       "KIP13Checker": [
         600
@@ -3418,7 +3418,7 @@
                         "name": "abi",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7491,
+                        "referencedDeclaration": 7825,
                         "src": "4244:3:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_abi",
@@ -3656,7 +3656,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.11",
-  "updatedAt": "2021-11-07T12:41:23.299Z",
+  "updatedAt": "2021-11-10T06:27:09.310Z",
   "devdoc": {
     "details": "Library used to query support of an interface declared via `IKIP13`. * Note that these functions return the actual result of the query: they do not `revert` if an interface is not supported. It is up to the caller to decide what to do in these cases.",
     "methods": {}
