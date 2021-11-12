@@ -518,25 +518,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"paused\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"},{\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"uri\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"pause\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"ids\",\"type\":\"uint256[]\"},{\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeBatchTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"unpause\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isPauser\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"accounts\",\"type\":\"address[]\"},{\"name\":\"ids\",\"type\":\"uint256[]\"}],\"name\":\"balanceOfBatch\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"paused\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renouncePauser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addPauser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"pause\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"operator\",\"type\":\"address\"},{\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"totalSupply\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"},{\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"id\",\"type\":\"uint256\"},{\"name\":\"amount\",\"type\":\"uint256\"},{\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"unpause\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"tokenId\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Paused\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"tokenId\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Unpaused\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Paused\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Unpaused\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"PauserAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"PauserRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"TransferSingle\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"ids\",\"type\":\"uint256[]\"},{\"indexed\":false,\"name\":\"values\",\"type\":\"uint256[]\"}],\"name\":\"TransferBatch\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"value\",\"type\":\"string\"},{\"indexed\":true,\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"URI\",\"type\":\"event\"}],\"devdoc\":{\"details\":\"KIP37 token with pausable token transfers, minting and burning. * Useful for scenarios such as preventing trades until the end of an evaluation period, or having an emergency switch for freezing all token transfers in the event of a large bug. * _Available since v3.1._\",\"methods\":{\"balanceOf(address,uint256)\":{\"details\":\"See {IKIP37-balanceOf}.     * Requirements:     * - `account` cannot be the zero address.\"},\"balanceOfBatch(address[],uint256[])\":{\"details\":\"See {IKIP37-balanceOfBatch}.     * Requirements:     * - `accounts` and `ids` must have the same length.\"},\"isApprovedForAll(address,address)\":{\"details\":\"See {IKIP37-isApprovedForAll}.\"},\"pause()\":{\"details\":\"Called by a pauser to pause, triggers stopped state.\"},\"pause(uint256)\":{\"details\":\"Throws if `msg.sender` is not allowed to pause.   Throws if the specific token is paused.\"},\"paused()\":{\"details\":\"Returns true if the contract is paused, and false otherwise.\"},\"paused(uint256)\":{\"return\":\"True if the specific token is paused, false otherwise\"},\"safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)\":{\"details\":\"See {IKIP37-safeBatchTransferFrom}.\"},\"safeTransferFrom(address,address,uint256,uint256,bytes)\":{\"details\":\"See {IKIP37-safeTransferFrom}.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"See {IKIP37-setApprovalForAll}.\"},\"supportsInterface(bytes4)\":{\"details\":\"See `IKIP13.supportsInterface`.     * Time complexity O(1), guaranteed to always use less than 30 000 gas.\"},\"unpause()\":{\"details\":\"Called by a pauser to unpause, returns to normal state.\"},\"unpause(uint256)\":{\"details\":\"Throws if `msg.sender` is not allowed to unpause.   Throws if the specific token is not paused.\"},\"uri(uint256)\":{\"details\":\"See {IKIP37MetadataURI-uri}.     * This implementation returns the same URI for *all* token types. It relies on the token type ID substituion mechanism http://kips.klaytn.com/KIPs/kip-37#metadata     * Clients calling this function must replace the `\\\\{id\\\\}` substring with the actual token type ID.\"}}},\"userdoc\":{\"methods\":{\"pause(uint256)\":{\"notice\":\"Pauses actions related to transfer and approval of the specific token.\"},\"paused(uint256)\":{\"notice\":\"Checks whether the specific token is paused.\"},\"unpause(uint256)\":{\"notice\":\"Resumes from the paused state of the specific token.\"}}}},\"settings\":{\"compilationTarget\":{\"/Users/gimseontae/Desktop/project/contract/contracts/token/KIP37/KIP37Pausable.sol\":\"KIP37Pausable\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gimseontae/Desktop/project/contract/contracts/GSN/Context.sol\":{\"keccak256\":\"0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061\",\"urls\":[\"bzzr://51482c01bddf23793bddee43b60ab9578a62948a4f2082def24ea792a553b055\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/access/Roles.sol\":{\"keccak256\":\"0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb\",\"urls\":[\"bzzr://bd34c1ce05b5b2b3a62fc02e160f6805b1cadd476854664f433c685b2fda8dad\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/access/roles/PauserRole.sol\":{\"keccak256\":\"0xf6826c684d51ca28db5293ce11a54c5cca1c757b6cd32b87613833c65086f995\",\"urls\":[\"bzzr://01b2756ab5b41b1d7ccadfeac53fbdce9c889263f1e011329c300c5fa3fda65f\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/introspection/IKIP13.sol\":{\"keccak256\":\"0xf7415711dbec40bc633af7d8cb5c3c0bc3d1ed97fd8c13f795a03eb3073ea219\",\"urls\":[\"bzzr://2c161a0e94debcd164c7a87e2c12c087ffefe24bc7a4a9f304f5d8ba39ed15a1\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/introspection/KIP13.sol\":{\"keccak256\":\"0x84681701e79f53ba1e9660b6a130bba31880d66cee996ab7d5567d239155c6da\",\"urls\":[\"bzzr://743958df51380e11b5e58092297c1e122582ade8d358010c733f27e175e7ca10\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/lifecycle/Pausable.sol\":{\"keccak256\":\"0x609f8cb524cd6b502624c79c099ec2fc6f23eef57b5c38e28efd82490875f37e\",\"urls\":[\"bzzr://46ee461a64298ef418bd100df1301355f4dc9ffeb06fe7a39aaf98d45c0bf988\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076\",\"urls\":[\"bzzr://292843005e754e752644f767477ec5ad7a1ffc91ddb18c38b8079c62f3993cad\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/token/KIP37/IERC1155Receiver.sol\":{\"keccak256\":\"0x1df8445fadc783d7ea4314d63c172c7f37b9d21341c6d9579915c4744abfcfc7\",\"urls\":[\"bzzr://3b950264911930d2690339a4ec482002fb3ab06c90110d149a15871d0eb42144\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/token/KIP37/IKIP37.sol\":{\"keccak256\":\"0x8d17538ef04ab43cd1859a0068a1d2aec70840081ac205cc0841aac7951ba200\",\"urls\":[\"bzzr://b630b7b5984ebf3ab11bdd54500ba6248159dd90c5144aabe9abcc4801e4b2e0\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/token/KIP37/IKIP37MetadataURI.sol\":{\"keccak256\":\"0xa88ff83764382d3e44bdf75a2f8c5f17db9204cc32a3871c86fe9d301e3f5a8a\",\"urls\":[\"bzzr://ba4343d6c303b6536166244d126a769b796f72e51a7df5324ec649504f368150\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/token/KIP37/IKIP37Receiver.sol\":{\"keccak256\":\"0x83496b998885cfa74818ccd60afaca8c9f54c70ef6f4487b3a0b904492c2bc30\",\"urls\":[\"bzzr://518de569744166ca37485aab16208f30a2abb796bc455663eb35783969f5b9c9\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/token/KIP37/KIP37.sol\":{\"keccak256\":\"0xb6f91fd7092e065de3946fe7225ae623649b892c6d441a536236fcde0f2fa0d7\",\"urls\":[\"bzzr://3d497775b4742946bec44d513ffb36450ae07cea3b605eeb344668cd6ce17201\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/token/KIP37/KIP37Pausable.sol\":{\"keccak256\":\"0x9e7eacaf3fe093718768872299f1373a16d7119229b9b01245fc6a4a6990b7ac\",\"urls\":[\"bzzr://081ae3135fc144f79b027ecf84c9c2c169489717fb4db3b7ea9acd1463c9749e\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/utils/Address.sol\":{\"keccak256\":\"0xf3358e5819ca73357abd6c90bdfffd0474af54364897f6b3e3234c4b71fbe9a1\",\"urls\":[\"bzzr://f7f6da60a184233fd666ac44e6fb2bd51ca6ebdc4867a310d368049aa4e62786\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"paused\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"},{\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"uri\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"pause\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"ids\",\"type\":\"uint256[]\"},{\"name\":\"amounts\",\"type\":\"uint256[]\"},{\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeBatchTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"unpause\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isPauser\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"accounts\",\"type\":\"address[]\"},{\"name\":\"ids\",\"type\":\"uint256[]\"}],\"name\":\"balanceOfBatch\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"paused\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renouncePauser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addPauser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"pause\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"operator\",\"type\":\"address\"},{\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"totalSupply\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"},{\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"id\",\"type\":\"uint256\"},{\"name\":\"amount\",\"type\":\"uint256\"},{\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"unpause\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"tokenId\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Paused\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"tokenId\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Unpaused\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Paused\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"Unpaused\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"PauserAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"PauserRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"TransferSingle\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"ids\",\"type\":\"uint256[]\"},{\"indexed\":false,\"name\":\"values\",\"type\":\"uint256[]\"}],\"name\":\"TransferBatch\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"value\",\"type\":\"string\"},{\"indexed\":true,\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"URI\",\"type\":\"event\"}],\"devdoc\":{\"details\":\"KIP37 token with pausable token transfers, minting and burning. * Useful for scenarios such as preventing trades until the end of an evaluation period, or having an emergency switch for freezing all token transfers in the event of a large bug. * _Available since v3.1._\",\"methods\":{\"balanceOf(address,uint256)\":{\"details\":\"See {IKIP37-balanceOf}.     * Requirements:     * - `account` cannot be the zero address.\"},\"balanceOfBatch(address[],uint256[])\":{\"details\":\"See {IKIP37-balanceOfBatch}.     * Requirements:     * - `accounts` and `ids` must have the same length.\"},\"isApprovedForAll(address,address)\":{\"details\":\"See {IKIP37-isApprovedForAll}.\"},\"pause()\":{\"details\":\"Called by a pauser to pause, triggers stopped state.\"},\"pause(uint256)\":{\"details\":\"Throws if `msg.sender` is not allowed to pause.   Throws if the specific token is paused.\"},\"paused()\":{\"details\":\"Returns true if the contract is paused, and false otherwise.\"},\"paused(uint256)\":{\"return\":\"True if the specific token is paused, false otherwise\"},\"safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)\":{\"details\":\"See {IKIP37-safeBatchTransferFrom}.\"},\"safeTransferFrom(address,address,uint256,uint256,bytes)\":{\"details\":\"See {IKIP37-safeTransferFrom}.\"},\"setApprovalForAll(address,bool)\":{\"details\":\"See {IKIP37-setApprovalForAll}.\"},\"supportsInterface(bytes4)\":{\"details\":\"See `IKIP13.supportsInterface`.     * Time complexity O(1), guaranteed to always use less than 30 000 gas.\"},\"unpause()\":{\"details\":\"Called by a pauser to unpause, returns to normal state.\"},\"unpause(uint256)\":{\"details\":\"Throws if `msg.sender` is not allowed to unpause.   Throws if the specific token is not paused.\"},\"uri(uint256)\":{\"details\":\"See {IKIP37MetadataURI-uri}.     * This implementation returns the same URI for *all* token types. It relies on the token type ID substituion mechanism http://kips.klaytn.com/KIPs/kip-37#metadata     * Clients calling this function must replace the `\\\\{id\\\\}` substring with the actual token type ID.\"}}},\"userdoc\":{\"methods\":{\"pause(uint256)\":{\"notice\":\"Pauses actions related to transfer and approval of the specific token.\"},\"paused(uint256)\":{\"notice\":\"Checks whether the specific token is paused.\"},\"unpause(uint256)\":{\"notice\":\"Resumes from the paused state of the specific token.\"}}}},\"settings\":{\"compilationTarget\":{\"/Users/humblefirm/Github/contract/contracts/token/KIP37/KIP37Pausable.sol\":\"KIP37Pausable\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/humblefirm/Github/contract/contracts/GSN/Context.sol\":{\"keccak256\":\"0x90a3995645af7562d84b9d69363ffa5ae7217714ab61e951bf7bc450f40e4061\",\"urls\":[\"bzzr://51482c01bddf23793bddee43b60ab9578a62948a4f2082def24ea792a553b055\"]},\"/Users/humblefirm/Github/contract/contracts/access/Roles.sol\":{\"keccak256\":\"0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb\",\"urls\":[\"bzzr://bd34c1ce05b5b2b3a62fc02e160f6805b1cadd476854664f433c685b2fda8dad\"]},\"/Users/humblefirm/Github/contract/contracts/access/roles/PauserRole.sol\":{\"keccak256\":\"0xf6826c684d51ca28db5293ce11a54c5cca1c757b6cd32b87613833c65086f995\",\"urls\":[\"bzzr://01b2756ab5b41b1d7ccadfeac53fbdce9c889263f1e011329c300c5fa3fda65f\"]},\"/Users/humblefirm/Github/contract/contracts/introspection/IKIP13.sol\":{\"keccak256\":\"0xf7415711dbec40bc633af7d8cb5c3c0bc3d1ed97fd8c13f795a03eb3073ea219\",\"urls\":[\"bzzr://2c161a0e94debcd164c7a87e2c12c087ffefe24bc7a4a9f304f5d8ba39ed15a1\"]},\"/Users/humblefirm/Github/contract/contracts/introspection/KIP13.sol\":{\"keccak256\":\"0x84681701e79f53ba1e9660b6a130bba31880d66cee996ab7d5567d239155c6da\",\"urls\":[\"bzzr://743958df51380e11b5e58092297c1e122582ade8d358010c733f27e175e7ca10\"]},\"/Users/humblefirm/Github/contract/contracts/lifecycle/Pausable.sol\":{\"keccak256\":\"0x609f8cb524cd6b502624c79c099ec2fc6f23eef57b5c38e28efd82490875f37e\",\"urls\":[\"bzzr://46ee461a64298ef418bd100df1301355f4dc9ffeb06fe7a39aaf98d45c0bf988\"]},\"/Users/humblefirm/Github/contract/contracts/math/SafeMath.sol\":{\"keccak256\":\"0x640b6dee7a4b830bdfd52b5031a07fc2b12209f5b2e29e5d364a7d37f69d8076\",\"urls\":[\"bzzr://292843005e754e752644f767477ec5ad7a1ffc91ddb18c38b8079c62f3993cad\"]},\"/Users/humblefirm/Github/contract/contracts/token/KIP37/IERC1155Receiver.sol\":{\"keccak256\":\"0x1df8445fadc783d7ea4314d63c172c7f37b9d21341c6d9579915c4744abfcfc7\",\"urls\":[\"bzzr://3b950264911930d2690339a4ec482002fb3ab06c90110d149a15871d0eb42144\"]},\"/Users/humblefirm/Github/contract/contracts/token/KIP37/IKIP37.sol\":{\"keccak256\":\"0x8d17538ef04ab43cd1859a0068a1d2aec70840081ac205cc0841aac7951ba200\",\"urls\":[\"bzzr://b630b7b5984ebf3ab11bdd54500ba6248159dd90c5144aabe9abcc4801e4b2e0\"]},\"/Users/humblefirm/Github/contract/contracts/token/KIP37/IKIP37MetadataURI.sol\":{\"keccak256\":\"0xa88ff83764382d3e44bdf75a2f8c5f17db9204cc32a3871c86fe9d301e3f5a8a\",\"urls\":[\"bzzr://ba4343d6c303b6536166244d126a769b796f72e51a7df5324ec649504f368150\"]},\"/Users/humblefirm/Github/contract/contracts/token/KIP37/IKIP37Receiver.sol\":{\"keccak256\":\"0x83496b998885cfa74818ccd60afaca8c9f54c70ef6f4487b3a0b904492c2bc30\",\"urls\":[\"bzzr://518de569744166ca37485aab16208f30a2abb796bc455663eb35783969f5b9c9\"]},\"/Users/humblefirm/Github/contract/contracts/token/KIP37/KIP37.sol\":{\"keccak256\":\"0xb6f91fd7092e065de3946fe7225ae623649b892c6d441a536236fcde0f2fa0d7\",\"urls\":[\"bzzr://3d497775b4742946bec44d513ffb36450ae07cea3b605eeb344668cd6ce17201\"]},\"/Users/humblefirm/Github/contract/contracts/token/KIP37/KIP37Pausable.sol\":{\"keccak256\":\"0x9e7eacaf3fe093718768872299f1373a16d7119229b9b01245fc6a4a6990b7ac\",\"urls\":[\"bzzr://081ae3135fc144f79b027ecf84c9c2c169489717fb4db3b7ea9acd1463c9749e\"]},\"/Users/humblefirm/Github/contract/contracts/utils/Address.sol\":{\"keccak256\":\"0xf3358e5819ca73357abd6c90bdfffd0474af54364897f6b3e3234c4b71fbe9a1\",\"urls\":[\"bzzr://f7f6da60a184233fd666ac44e6fb2bd51ca6ebdc4867a310d368049aa4e62786\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\n\npragma solidity ^0.5.0;\n\nimport \"./KIP37.sol\";\nimport \"../../lifecycle/Pausable.sol\";\n\n/**\n * @dev KIP37 token with pausable token transfers, minting and burning.\n *\n * Useful for scenarios such as preventing trades until the end of an evaluation\n * period, or having an emergency switch for freezing all token transfers in the\n * event of a large bug.\n *\n * _Available since v3.1._\n */\ncontract KIP37Pausable is KIP37, Pausable {\n    mapping(uint256 => bool) private _tokenPaused;\n\n    /*\n     *     bytes4(keccak256('pause()')) == 0x8456cb59\n     *     bytes4(keccak256('pause(uint256)')) == 0x136439dd\n     *     bytes4(keccak256('paused()')) == 0x5c975abb\n     *     bytes4(keccak256('paused(uint256)')) == 0x00dde10e\n     *     bytes4(keccak256('unpause()')) == 0x3f4ba83a\n     *     bytes4(keccak256('unpause(uint256)')) == 0xfabc1cbc\n     *\n     *     => 0x8456cb59 ^ 0x136439dd ^ 0x5c975abb ^\n     *        0x00dde10e ^ 0x3f4ba83a ^ 0xfabc1cbc == 0x0e8ffdb7\n     */\n    bytes4 private constant _INTERFACE_ID_KIP37_PAUSABLE = 0x0e8ffdb7;\n\n    constructor() public {\n        _registerInterface(_INTERFACE_ID_KIP37_PAUSABLE);\n    }\n\n    /**\n     * @dev Emitted when the pause is triggered by a pauser (`account`) with token ID.\n     */\n    event Paused(uint256 tokenId, address account);\n\n    /**\n     * @dev Emitted when the pause is lifted by a pauser (`account`) with token ID.\n     */\n    event Unpaused(uint256 tokenId, address account);\n\n    /// @notice Checks whether the specific token is paused.\n    /// @return True if the specific token is paused, false otherwise\n    function paused(uint256 _id) public view returns (bool) {\n        return _tokenPaused[_id];\n    }\n\n    /// @notice Pauses actions related to transfer and approval of the specific token.\n    /// @dev Throws if `msg.sender` is not allowed to pause.\n    ///   Throws if the specific token is paused.\n    function pause(uint256 _id) public onlyPauser {\n        require(_tokenPaused[_id] == false, \"KIP37Pausable: already paused\");\n        _tokenPaused[_id] = true;\n        emit Paused(_id, msg.sender);\n    }\n\n    /// @notice Resumes from the paused state of the specific token.\n    /// @dev Throws if `msg.sender` is not allowed to unpause.\n    ///   Throws if the specific token is not paused.\n    function unpause(uint256 _id) public onlyPauser {\n        require(_tokenPaused[_id] == true, \"KIP37Pausable: already unpaused\");\n        _tokenPaused[_id] = false;\n        emit Unpaused(_id, msg.sender);\n    }\n\n    /**\n     * @dev See {KIP37-_beforeTokenTransfer}.\n     *\n     * Requirements:\n     *\n     * - the contract must not be paused.\n     */\n    function _beforeTokenTransfer(\n        address operator,\n        address from,\n        address to,\n        uint256[] memory ids,\n        uint256[] memory amounts,\n        bytes memory data\n    ) internal {\n        require(!paused(), \"KIP37Pausable: token transfer while paused\");\n        for (uint256 i = 0; i < ids.length; i++) {\n            require(\n                _tokenPaused[ids[i]] == false,\n                \"KIP37Pausable: the token is paused\"\n            );\n        }\n    }\n}\n",
-  "sourcePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP37/KIP37Pausable.sol",
+  "sourcePath": "/Users/humblefirm/Github/contract/contracts/token/KIP37/KIP37Pausable.sol",
   "ast": {
-    "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP37/KIP37Pausable.sol",
+    "absolutePath": "/Users/humblefirm/Github/contract/contracts/token/KIP37/KIP37Pausable.sol",
     "exportedSymbols": {
       "KIP37Pausable": [
-        6822
+        6844
       ]
     },
-    "id": 6823,
+    "id": 6845,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6669,
+        "id": 6691,
         "literals": [
           "solidity",
           "^",
@@ -547,23 +547,23 @@
         "src": "33:23:67"
       },
       {
-        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP37/KIP37.sol",
+        "absolutePath": "/Users/humblefirm/Github/contract/contracts/token/KIP37/KIP37.sol",
         "file": "./KIP37.sol",
-        "id": 6670,
+        "id": 6692,
         "nodeType": "ImportDirective",
-        "scope": 6823,
-        "sourceUnit": 6278,
+        "scope": 6845,
+        "sourceUnit": 6300,
         "src": "58:21:67",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/lifecycle/Pausable.sol",
+        "absolutePath": "/Users/humblefirm/Github/contract/contracts/lifecycle/Pausable.sol",
         "file": "../../lifecycle/Pausable.sol",
-        "id": 6671,
+        "id": 6693,
         "nodeType": "ImportDirective",
-        "scope": 6823,
-        "sourceUnit": 1907,
+        "scope": 6845,
+        "sourceUnit": 1929,
         "src": "80:38:67",
         "symbolAliases": [],
         "unitAlias": ""
@@ -574,17 +574,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 6672,
+              "id": 6694,
               "name": "KIP37",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6277,
+              "referencedDeclaration": 6299,
               "src": "446:5:67",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_KIP37_$6277",
+                "typeIdentifier": "t_contract$_KIP37_$6299",
                 "typeString": "contract KIP37"
               }
             },
-            "id": 6673,
+            "id": 6695,
             "nodeType": "InheritanceSpecifier",
             "src": "446:5:67"
           },
@@ -592,17 +592,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 6674,
+              "id": 6696,
               "name": "Pausable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1906,
+              "referencedDeclaration": 1928,
               "src": "453:8:67",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Pausable_$1906",
+                "typeIdentifier": "t_contract$_Pausable_$1928",
                 "typeString": "contract Pausable"
               }
             },
-            "id": 6675,
+            "id": 6697,
             "nodeType": "InheritanceSpecifier",
             "src": "453:8:67"
           }
@@ -612,22 +612,22 @@
           352,
           411,
           463,
-          1906,
-          5068,
-          5081,
-          6277
+          1928,
+          5090,
+          5103,
+          6299
         ],
         "contractKind": "contract",
         "documentation": "@dev KIP37 token with pausable token transfers, minting and burning.\n * Useful for scenarios such as preventing trades until the end of an evaluation\nperiod, or having an emergency switch for freezing all token transfers in the\nevent of a large bug.\n * _Available since v3.1._",
         "fullyImplemented": false,
-        "id": 6822,
+        "id": 6844,
         "linearizedBaseContracts": [
-          6822,
-          1906,
+          6844,
+          1928,
           352,
-          6277,
-          5081,
-          5068,
+          6299,
+          5103,
+          5090,
           463,
           411,
           26
@@ -637,10 +637,10 @@
         "nodes": [
           {
             "constant": false,
-            "id": 6679,
+            "id": 6701,
             "name": "_tokenPaused",
             "nodeType": "VariableDeclaration",
-            "scope": 6822,
+            "scope": 6844,
             "src": "468:45:67",
             "stateVariable": true,
             "storageLocation": "default",
@@ -649,9 +649,9 @@
               "typeString": "mapping(uint256 => bool)"
             },
             "typeName": {
-              "id": 6678,
+              "id": 6700,
               "keyType": {
-                "id": 6676,
+                "id": 6698,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "476:7:67",
@@ -667,7 +667,7 @@
                 "typeString": "mapping(uint256 => bool)"
               },
               "valueType": {
-                "id": 6677,
+                "id": 6699,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
                 "src": "487:4:67",
@@ -682,10 +682,10 @@
           },
           {
             "constant": true,
-            "id": 6682,
+            "id": 6704,
             "name": "_INTERFACE_ID_KIP37_PAUSABLE",
             "nodeType": "VariableDeclaration",
-            "scope": 6822,
+            "scope": 6844,
             "src": "1011:65:67",
             "stateVariable": true,
             "storageLocation": "default",
@@ -694,7 +694,7 @@
               "typeString": "bytes4"
             },
             "typeName": {
-              "id": 6680,
+              "id": 6702,
               "name": "bytes4",
               "nodeType": "ElementaryTypeName",
               "src": "1011:6:67",
@@ -706,7 +706,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "30783065386666646237",
-              "id": 6681,
+              "id": 6703,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -725,7 +725,7 @@
           },
           {
             "body": {
-              "id": 6689,
+              "id": 6711,
               "nodeType": "Block",
               "src": "1104:65:67",
               "statements": [
@@ -735,11 +735,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 6686,
+                        "id": 6708,
                         "name": "_INTERFACE_ID_KIP37_PAUSABLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6682,
+                        "referencedDeclaration": 6704,
                         "src": "1133:28:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
@@ -754,7 +754,7 @@
                           "typeString": "bytes4"
                         }
                       ],
-                      "id": 6685,
+                      "id": 6707,
                       "name": "_registerInterface",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -765,7 +765,7 @@
                         "typeString": "function (bytes4)"
                       }
                     },
-                    "id": 6687,
+                    "id": 6709,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -779,32 +779,32 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6688,
+                  "id": 6710,
                   "nodeType": "ExpressionStatement",
                   "src": "1114:48:67"
                 }
               ]
             },
             "documentation": null,
-            "id": 6690,
+            "id": 6712,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6683,
+              "id": 6705,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1094:2:67"
             },
             "returnParameters": {
-              "id": 6684,
+              "id": 6706,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1104:0:67"
             },
-            "scope": 6822,
+            "scope": 6844,
             "src": "1083:86:67",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -813,20 +813,20 @@
           {
             "anonymous": false,
             "documentation": "@dev Emitted when the pause is triggered by a pauser (`account`) with token ID.",
-            "id": 6696,
+            "id": 6718,
             "name": "Paused",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 6695,
+              "id": 6717,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6692,
+                  "id": 6714,
                   "indexed": false,
                   "name": "tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6696,
+                  "scope": 6718,
                   "src": "1291:15:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -835,7 +835,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6691,
+                    "id": 6713,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1291:7:67",
@@ -849,11 +849,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 6694,
+                  "id": 6716,
                   "indexed": false,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6696,
+                  "scope": 6718,
                   "src": "1308:15:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -862,7 +862,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6693,
+                    "id": 6715,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1308:7:67",
@@ -883,20 +883,20 @@
           {
             "anonymous": false,
             "documentation": "@dev Emitted when the pause is lifted by a pauser (`account`) with token ID.",
-            "id": 6702,
+            "id": 6724,
             "name": "Unpaused",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 6701,
+              "id": 6723,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6698,
+                  "id": 6720,
                   "indexed": false,
                   "name": "tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6702,
+                  "scope": 6724,
                   "src": "1446:15:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -905,7 +905,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6697,
+                    "id": 6719,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1446:7:67",
@@ -919,11 +919,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 6700,
+                  "id": 6722,
                   "indexed": false,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6702,
+                  "scope": 6724,
                   "src": "1463:15:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -932,7 +932,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6699,
+                    "id": 6721,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1463:7:67",
@@ -952,7 +952,7 @@
           },
           {
             "body": {
-              "id": 6713,
+              "id": 6735,
               "nodeType": "Block",
               "src": "1673:41:67",
               "statements": [
@@ -961,25 +961,25 @@
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 6709,
+                      "id": 6731,
                       "name": "_tokenPaused",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6679,
+                      "referencedDeclaration": 6701,
                       "src": "1690:12:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_uint256_$_t_bool_$",
                         "typeString": "mapping(uint256 => bool)"
                       }
                     },
-                    "id": 6711,
+                    "id": 6733,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 6710,
+                      "id": 6732,
                       "name": "_id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6704,
+                      "referencedDeclaration": 6726,
                       "src": "1703:3:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -997,30 +997,30 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 6708,
-                  "id": 6712,
+                  "functionReturnParameters": 6730,
+                  "id": 6734,
                   "nodeType": "Return",
                   "src": "1683:24:67"
                 }
               ]
             },
             "documentation": "@notice Checks whether the specific token is paused.\n @return True if the specific token is paused, false otherwise",
-            "id": 6714,
+            "id": 6736,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "paused",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6705,
+              "id": 6727,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6704,
+                  "id": 6726,
                   "name": "_id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6714,
+                  "scope": 6736,
                   "src": "1633:11:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1029,7 +1029,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6703,
+                    "id": 6725,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1633:7:67",
@@ -1045,15 +1045,15 @@
               "src": "1632:13:67"
             },
             "returnParameters": {
-              "id": 6708,
+              "id": 6730,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6707,
+                  "id": 6729,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6714,
+                  "scope": 6736,
                   "src": "1667:4:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1062,7 +1062,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 6706,
+                    "id": 6728,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1667:4:67",
@@ -1077,7 +1077,7 @@
               ],
               "src": "1666:6:67"
             },
-            "scope": 6822,
+            "scope": 6844,
             "src": "1617:97:67",
             "stateMutability": "view",
             "superFunction": null,
@@ -1085,7 +1085,7 @@
           },
           {
             "body": {
-              "id": 6742,
+              "id": 6764,
               "nodeType": "Block",
               "src": "1964:157:67",
               "statements": [
@@ -1099,7 +1099,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 6726,
+                        "id": 6748,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1108,25 +1108,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 6722,
+                            "id": 6744,
                             "name": "_tokenPaused",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 6679,
+                            "referencedDeclaration": 6701,
                             "src": "1982:12:67",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_uint256_$_t_bool_$",
                               "typeString": "mapping(uint256 => bool)"
                             }
                           },
-                          "id": 6724,
+                          "id": 6746,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 6723,
+                            "id": 6745,
                             "name": "_id",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 6716,
+                            "referencedDeclaration": 6738,
                             "src": "1995:3:67",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1149,7 +1149,7 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "66616c7365",
-                          "id": 6725,
+                          "id": 6747,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1173,7 +1173,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4b495033375061757361626c653a20616c726561647920706175736564",
-                        "id": 6727,
+                        "id": 6749,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1200,21 +1200,21 @@
                           "typeString": "literal_string \"KIP37Pausable: already paused\""
                         }
                       ],
-                      "id": 6721,
+                      "id": 6743,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7841,
-                        7842
+                        7863,
+                        7864
                       ],
-                      "referencedDeclaration": 7842,
+                      "referencedDeclaration": 7864,
                       "src": "1974:7:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 6728,
+                    "id": 6750,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1228,14 +1228,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6729,
+                  "id": 6751,
                   "nodeType": "ExpressionStatement",
                   "src": "1974:68:67"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6734,
+                    "id": 6756,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1244,25 +1244,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 6730,
+                        "id": 6752,
                         "name": "_tokenPaused",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6679,
+                        "referencedDeclaration": 6701,
                         "src": "2052:12:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_bool_$",
                           "typeString": "mapping(uint256 => bool)"
                         }
                       },
-                      "id": 6732,
+                      "id": 6754,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 6731,
+                        "id": 6753,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6716,
+                        "referencedDeclaration": 6738,
                         "src": "2065:3:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1285,7 +1285,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 6733,
+                      "id": 6755,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1306,7 +1306,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 6735,
+                  "id": 6757,
                   "nodeType": "ExpressionStatement",
                   "src": "2052:24:67"
                 },
@@ -1316,11 +1316,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 6737,
+                        "id": 6759,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6716,
+                        "referencedDeclaration": 6738,
                         "src": "2098:3:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1331,18 +1331,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 6738,
+                          "id": 6760,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7838,
+                          "referencedDeclaration": 7860,
                           "src": "2103:3:67",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 6739,
+                        "id": 6761,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1368,21 +1368,21 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 6736,
+                      "id": 6758,
                       "name": "Paused",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        6696,
-                        1830
+                        6718,
+                        1852
                       ],
-                      "referencedDeclaration": 6696,
+                      "referencedDeclaration": 6718,
                       "src": "2091:6:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_address_$returns$__$",
                         "typeString": "function (uint256,address)"
                       }
                     },
-                    "id": 6740,
+                    "id": 6762,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1396,23 +1396,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6741,
+                  "id": 6763,
                   "nodeType": "EmitStatement",
                   "src": "2086:28:67"
                 }
               ]
             },
             "documentation": "@notice Pauses actions related to transfer and approval of the specific token.\n @dev Throws if `msg.sender` is not allowed to pause.\n   Throws if the specific token is paused.",
-            "id": 6743,
+            "id": 6765,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 6719,
+                "id": 6741,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 6718,
+                  "id": 6740,
                   "name": "onlyPauser",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -1430,15 +1430,15 @@
             "name": "pause",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6717,
+              "id": 6739,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6716,
+                  "id": 6738,
                   "name": "_id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6743,
+                  "scope": 6765,
                   "src": "1933:11:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1447,7 +1447,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6715,
+                    "id": 6737,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1933:7:67",
@@ -1463,12 +1463,12 @@
               "src": "1932:13:67"
             },
             "returnParameters": {
-              "id": 6720,
+              "id": 6742,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1964:0:67"
             },
-            "scope": 6822,
+            "scope": 6844,
             "src": "1918:203:67",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1476,7 +1476,7 @@
           },
           {
             "body": {
-              "id": 6771,
+              "id": 6793,
               "nodeType": "Block",
               "src": "2361:161:67",
               "statements": [
@@ -1490,7 +1490,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 6755,
+                        "id": 6777,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1499,25 +1499,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 6751,
+                            "id": 6773,
                             "name": "_tokenPaused",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 6679,
+                            "referencedDeclaration": 6701,
                             "src": "2379:12:67",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_uint256_$_t_bool_$",
                               "typeString": "mapping(uint256 => bool)"
                             }
                           },
-                          "id": 6753,
+                          "id": 6775,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 6752,
+                            "id": 6774,
                             "name": "_id",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 6745,
+                            "referencedDeclaration": 6767,
                             "src": "2392:3:67",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1540,7 +1540,7 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "74727565",
-                          "id": 6754,
+                          "id": 6776,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1564,7 +1564,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4b495033375061757361626c653a20616c726561647920756e706175736564",
-                        "id": 6756,
+                        "id": 6778,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1591,21 +1591,21 @@
                           "typeString": "literal_string \"KIP37Pausable: already unpaused\""
                         }
                       ],
-                      "id": 6750,
+                      "id": 6772,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7841,
-                        7842
+                        7863,
+                        7864
                       ],
-                      "referencedDeclaration": 7842,
+                      "referencedDeclaration": 7864,
                       "src": "2371:7:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 6757,
+                    "id": 6779,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1619,14 +1619,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6758,
+                  "id": 6780,
                   "nodeType": "ExpressionStatement",
                   "src": "2371:69:67"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6763,
+                    "id": 6785,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1635,25 +1635,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 6759,
+                        "id": 6781,
                         "name": "_tokenPaused",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6679,
+                        "referencedDeclaration": 6701,
                         "src": "2450:12:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_bool_$",
                           "typeString": "mapping(uint256 => bool)"
                         }
                       },
-                      "id": 6761,
+                      "id": 6783,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 6760,
+                        "id": 6782,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6745,
+                        "referencedDeclaration": 6767,
                         "src": "2463:3:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1676,7 +1676,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 6762,
+                      "id": 6784,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1697,7 +1697,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 6764,
+                  "id": 6786,
                   "nodeType": "ExpressionStatement",
                   "src": "2450:25:67"
                 },
@@ -1707,11 +1707,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 6766,
+                        "id": 6788,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6745,
+                        "referencedDeclaration": 6767,
                         "src": "2499:3:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1722,18 +1722,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 6767,
+                          "id": 6789,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7838,
+                          "referencedDeclaration": 7860,
                           "src": "2504:3:67",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 6768,
+                        "id": 6790,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1759,21 +1759,21 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 6765,
+                      "id": 6787,
                       "name": "Unpaused",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        6702,
-                        1834
+                        6724,
+                        1856
                       ],
-                      "referencedDeclaration": 6702,
+                      "referencedDeclaration": 6724,
                       "src": "2490:8:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_address_$returns$__$",
                         "typeString": "function (uint256,address)"
                       }
                     },
-                    "id": 6769,
+                    "id": 6791,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1787,23 +1787,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6770,
+                  "id": 6792,
                   "nodeType": "EmitStatement",
                   "src": "2485:30:67"
                 }
               ]
             },
             "documentation": "@notice Resumes from the paused state of the specific token.\n @dev Throws if `msg.sender` is not allowed to unpause.\n   Throws if the specific token is not paused.",
-            "id": 6772,
+            "id": 6794,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 6748,
+                "id": 6770,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 6747,
+                  "id": 6769,
                   "name": "onlyPauser",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -1821,15 +1821,15 @@
             "name": "unpause",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6746,
+              "id": 6768,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6745,
+                  "id": 6767,
                   "name": "_id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6772,
+                  "scope": 6794,
                   "src": "2330:11:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1838,7 +1838,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6744,
+                    "id": 6766,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2330:7:67",
@@ -1854,12 +1854,12 @@
               "src": "2329:13:67"
             },
             "returnParameters": {
-              "id": 6749,
+              "id": 6771,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2361:0:67"
             },
-            "scope": 6822,
+            "scope": 6844,
             "src": "2313:209:67",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1867,7 +1867,7 @@
           },
           {
             "body": {
-              "id": 6820,
+              "id": 6842,
               "nodeType": "Block",
               "src": "2871:278:67",
               "statements": [
@@ -1877,7 +1877,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 6792,
+                        "id": 6814,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1891,21 +1891,21 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 6790,
+                            "id": 6812,
                             "name": "paused",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [
-                              6714,
-                              1852
+                              6736,
+                              1874
                             ],
-                            "referencedDeclaration": 1852,
+                            "referencedDeclaration": 1874,
                             "src": "2890:6:67",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_bool_$",
                               "typeString": "function () view returns (bool)"
                             }
                           },
-                          "id": 6791,
+                          "id": 6813,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1927,7 +1927,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4b495033375061757361626c653a20746f6b656e207472616e73666572207768696c6520706175736564",
-                        "id": 6793,
+                        "id": 6815,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1954,21 +1954,21 @@
                           "typeString": "literal_string \"KIP37Pausable: token transfer while paused\""
                         }
                       ],
-                      "id": 6789,
+                      "id": 6811,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7841,
-                        7842
+                        7863,
+                        7864
                       ],
-                      "referencedDeclaration": 7842,
+                      "referencedDeclaration": 7864,
                       "src": "2881:7:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 6794,
+                    "id": 6816,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1982,13 +1982,13 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6795,
+                  "id": 6817,
                   "nodeType": "ExpressionStatement",
                   "src": "2881:64:67"
                 },
                 {
                   "body": {
-                    "id": 6818,
+                    "id": 6840,
                     "nodeType": "Block",
                     "src": "2996:147:67",
                     "statements": [
@@ -2002,7 +2002,7 @@
                                 "typeIdentifier": "t_bool",
                                 "typeString": "bool"
                               },
-                              "id": 6814,
+                              "id": 6836,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -2011,41 +2011,41 @@
                                 "argumentTypes": null,
                                 "baseExpression": {
                                   "argumentTypes": null,
-                                  "id": 6808,
+                                  "id": 6830,
                                   "name": "_tokenPaused",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 6679,
+                                  "referencedDeclaration": 6701,
                                   "src": "3035:12:67",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_mapping$_t_uint256_$_t_bool_$",
                                     "typeString": "mapping(uint256 => bool)"
                                   }
                                 },
-                                "id": 6812,
+                                "id": 6834,
                                 "indexExpression": {
                                   "argumentTypes": null,
                                   "baseExpression": {
                                     "argumentTypes": null,
-                                    "id": 6809,
+                                    "id": 6831,
                                     "name": "ids",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 6781,
+                                    "referencedDeclaration": 6803,
                                     "src": "3048:3:67",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
                                       "typeString": "uint256[] memory"
                                     }
                                   },
-                                  "id": 6811,
+                                  "id": 6833,
                                   "indexExpression": {
                                     "argumentTypes": null,
-                                    "id": 6810,
+                                    "id": 6832,
                                     "name": "i",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 6797,
+                                    "referencedDeclaration": 6819,
                                     "src": "3052:1:67",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -2079,7 +2079,7 @@
                               "rightExpression": {
                                 "argumentTypes": null,
                                 "hexValue": "66616c7365",
-                                "id": 6813,
+                                "id": 6835,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -2103,7 +2103,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "4b495033375061757361626c653a2074686520746f6b656e20697320706175736564",
-                              "id": 6815,
+                              "id": 6837,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2130,21 +2130,21 @@
                                 "typeString": "literal_string \"KIP37Pausable: the token is paused\""
                               }
                             ],
-                            "id": 6807,
+                            "id": 6829,
                             "name": "require",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [
-                              7841,
-                              7842
+                              7863,
+                              7864
                             ],
-                            "referencedDeclaration": 7842,
+                            "referencedDeclaration": 7864,
                             "src": "3010:7:67",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                               "typeString": "function (bool,string memory) pure"
                             }
                           },
-                          "id": 6816,
+                          "id": 6838,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2158,7 +2158,7 @@
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 6817,
+                        "id": 6839,
                         "nodeType": "ExpressionStatement",
                         "src": "3010:122:67"
                       }
@@ -2170,18 +2170,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 6803,
+                    "id": 6825,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 6800,
+                      "id": 6822,
                       "name": "i",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6797,
+                      "referencedDeclaration": 6819,
                       "src": "2975:1:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2194,18 +2194,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 6801,
+                        "id": 6823,
                         "name": "ids",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6781,
+                        "referencedDeclaration": 6803,
                         "src": "2979:3:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
                           "typeString": "uint256[] memory"
                         }
                       },
-                      "id": 6802,
+                      "id": 6824,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2225,18 +2225,18 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 6819,
+                  "id": 6841,
                   "initializationExpression": {
                     "assignments": [
-                      6797
+                      6819
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 6797,
+                        "id": 6819,
                         "name": "i",
                         "nodeType": "VariableDeclaration",
-                        "scope": 6819,
+                        "scope": 6841,
                         "src": "2960:9:67",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -2245,7 +2245,7 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 6796,
+                          "id": 6818,
                           "name": "uint256",
                           "nodeType": "ElementaryTypeName",
                           "src": "2960:7:67",
@@ -2258,11 +2258,11 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 6799,
+                    "id": 6821,
                     "initialValue": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 6798,
+                      "id": 6820,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2283,7 +2283,7 @@
                   "loopExpression": {
                     "expression": {
                       "argumentTypes": null,
-                      "id": 6805,
+                      "id": 6827,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2294,11 +2294,11 @@
                       "src": "2991:3:67",
                       "subExpression": {
                         "argumentTypes": null,
-                        "id": 6804,
+                        "id": 6826,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6797,
+                        "referencedDeclaration": 6819,
                         "src": "2991:1:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2310,7 +2310,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 6806,
+                    "id": 6828,
                     "nodeType": "ExpressionStatement",
                     "src": "2991:3:67"
                   },
@@ -2320,22 +2320,22 @@
               ]
             },
             "documentation": "@dev See {KIP37-_beforeTokenTransfer}.\n     * Requirements:\n     * - the contract must not be paused.",
-            "id": 6821,
+            "id": 6843,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_beforeTokenTransfer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6787,
+              "id": 6809,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6774,
+                  "id": 6796,
                   "name": "operator",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6821,
+                  "scope": 6843,
                   "src": "2706:16:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2344,7 +2344,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6773,
+                    "id": 6795,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2706:7:67",
@@ -2359,10 +2359,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 6776,
+                  "id": 6798,
                   "name": "from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6821,
+                  "scope": 6843,
                   "src": "2732:12:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2371,7 +2371,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6775,
+                    "id": 6797,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2732:7:67",
@@ -2386,10 +2386,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 6778,
+                  "id": 6800,
                   "name": "to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6821,
+                  "scope": 6843,
                   "src": "2754:10:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2398,7 +2398,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6777,
+                    "id": 6799,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2754:7:67",
@@ -2413,10 +2413,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 6781,
+                  "id": 6803,
                   "name": "ids",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6821,
+                  "scope": 6843,
                   "src": "2774:20:67",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2426,7 +2426,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 6779,
+                      "id": 6801,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
                       "src": "2774:7:67",
@@ -2435,7 +2435,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 6780,
+                    "id": 6802,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "2774:9:67",
@@ -2449,10 +2449,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 6784,
+                  "id": 6806,
                   "name": "amounts",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6821,
+                  "scope": 6843,
                   "src": "2804:24:67",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2462,7 +2462,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 6782,
+                      "id": 6804,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
                       "src": "2804:7:67",
@@ -2471,7 +2471,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 6783,
+                    "id": 6805,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "2804:9:67",
@@ -2485,10 +2485,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 6786,
+                  "id": 6808,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6821,
+                  "scope": 6843,
                   "src": "2838:17:67",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2497,7 +2497,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 6785,
+                    "id": 6807,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "2838:5:67",
@@ -2513,36 +2513,36 @@
               "src": "2696:165:67"
             },
             "returnParameters": {
-              "id": 6788,
+              "id": 6810,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2871:0:67"
             },
-            "scope": 6822,
+            "scope": 6844,
             "src": "2667:482:67",
             "stateMutability": "nonpayable",
-            "superFunction": 6043,
+            "superFunction": 6065,
             "visibility": "internal"
           }
         ],
-        "scope": 6823,
+        "scope": 6845,
         "src": "420:2731:67"
       }
     ],
     "src": "33:3119:67"
   },
   "legacyAST": {
-    "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP37/KIP37Pausable.sol",
+    "absolutePath": "/Users/humblefirm/Github/contract/contracts/token/KIP37/KIP37Pausable.sol",
     "exportedSymbols": {
       "KIP37Pausable": [
-        6822
+        6844
       ]
     },
-    "id": 6823,
+    "id": 6845,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 6669,
+        "id": 6691,
         "literals": [
           "solidity",
           "^",
@@ -2553,23 +2553,23 @@
         "src": "33:23:67"
       },
       {
-        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP37/KIP37.sol",
+        "absolutePath": "/Users/humblefirm/Github/contract/contracts/token/KIP37/KIP37.sol",
         "file": "./KIP37.sol",
-        "id": 6670,
+        "id": 6692,
         "nodeType": "ImportDirective",
-        "scope": 6823,
-        "sourceUnit": 6278,
+        "scope": 6845,
+        "sourceUnit": 6300,
         "src": "58:21:67",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/lifecycle/Pausable.sol",
+        "absolutePath": "/Users/humblefirm/Github/contract/contracts/lifecycle/Pausable.sol",
         "file": "../../lifecycle/Pausable.sol",
-        "id": 6671,
+        "id": 6693,
         "nodeType": "ImportDirective",
-        "scope": 6823,
-        "sourceUnit": 1907,
+        "scope": 6845,
+        "sourceUnit": 1929,
         "src": "80:38:67",
         "symbolAliases": [],
         "unitAlias": ""
@@ -2580,17 +2580,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 6672,
+              "id": 6694,
               "name": "KIP37",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 6277,
+              "referencedDeclaration": 6299,
               "src": "446:5:67",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_KIP37_$6277",
+                "typeIdentifier": "t_contract$_KIP37_$6299",
                 "typeString": "contract KIP37"
               }
             },
-            "id": 6673,
+            "id": 6695,
             "nodeType": "InheritanceSpecifier",
             "src": "446:5:67"
           },
@@ -2598,17 +2598,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 6674,
+              "id": 6696,
               "name": "Pausable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1906,
+              "referencedDeclaration": 1928,
               "src": "453:8:67",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Pausable_$1906",
+                "typeIdentifier": "t_contract$_Pausable_$1928",
                 "typeString": "contract Pausable"
               }
             },
-            "id": 6675,
+            "id": 6697,
             "nodeType": "InheritanceSpecifier",
             "src": "453:8:67"
           }
@@ -2618,22 +2618,22 @@
           352,
           411,
           463,
-          1906,
-          5068,
-          5081,
-          6277
+          1928,
+          5090,
+          5103,
+          6299
         ],
         "contractKind": "contract",
         "documentation": "@dev KIP37 token with pausable token transfers, minting and burning.\n * Useful for scenarios such as preventing trades until the end of an evaluation\nperiod, or having an emergency switch for freezing all token transfers in the\nevent of a large bug.\n * _Available since v3.1._",
         "fullyImplemented": false,
-        "id": 6822,
+        "id": 6844,
         "linearizedBaseContracts": [
-          6822,
-          1906,
+          6844,
+          1928,
           352,
-          6277,
-          5081,
-          5068,
+          6299,
+          5103,
+          5090,
           463,
           411,
           26
@@ -2643,10 +2643,10 @@
         "nodes": [
           {
             "constant": false,
-            "id": 6679,
+            "id": 6701,
             "name": "_tokenPaused",
             "nodeType": "VariableDeclaration",
-            "scope": 6822,
+            "scope": 6844,
             "src": "468:45:67",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2655,9 +2655,9 @@
               "typeString": "mapping(uint256 => bool)"
             },
             "typeName": {
-              "id": 6678,
+              "id": 6700,
               "keyType": {
-                "id": 6676,
+                "id": 6698,
                 "name": "uint256",
                 "nodeType": "ElementaryTypeName",
                 "src": "476:7:67",
@@ -2673,7 +2673,7 @@
                 "typeString": "mapping(uint256 => bool)"
               },
               "valueType": {
-                "id": 6677,
+                "id": 6699,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
                 "src": "487:4:67",
@@ -2688,10 +2688,10 @@
           },
           {
             "constant": true,
-            "id": 6682,
+            "id": 6704,
             "name": "_INTERFACE_ID_KIP37_PAUSABLE",
             "nodeType": "VariableDeclaration",
-            "scope": 6822,
+            "scope": 6844,
             "src": "1011:65:67",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2700,7 +2700,7 @@
               "typeString": "bytes4"
             },
             "typeName": {
-              "id": 6680,
+              "id": 6702,
               "name": "bytes4",
               "nodeType": "ElementaryTypeName",
               "src": "1011:6:67",
@@ -2712,7 +2712,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "30783065386666646237",
-              "id": 6681,
+              "id": 6703,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2731,7 +2731,7 @@
           },
           {
             "body": {
-              "id": 6689,
+              "id": 6711,
               "nodeType": "Block",
               "src": "1104:65:67",
               "statements": [
@@ -2741,11 +2741,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 6686,
+                        "id": 6708,
                         "name": "_INTERFACE_ID_KIP37_PAUSABLE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6682,
+                        "referencedDeclaration": 6704,
                         "src": "1133:28:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes4",
@@ -2760,7 +2760,7 @@
                           "typeString": "bytes4"
                         }
                       ],
-                      "id": 6685,
+                      "id": 6707,
                       "name": "_registerInterface",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -2771,7 +2771,7 @@
                         "typeString": "function (bytes4)"
                       }
                     },
-                    "id": 6687,
+                    "id": 6709,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2785,32 +2785,32 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6688,
+                  "id": 6710,
                   "nodeType": "ExpressionStatement",
                   "src": "1114:48:67"
                 }
               ]
             },
             "documentation": null,
-            "id": 6690,
+            "id": 6712,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6683,
+              "id": 6705,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1094:2:67"
             },
             "returnParameters": {
-              "id": 6684,
+              "id": 6706,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1104:0:67"
             },
-            "scope": 6822,
+            "scope": 6844,
             "src": "1083:86:67",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2819,20 +2819,20 @@
           {
             "anonymous": false,
             "documentation": "@dev Emitted when the pause is triggered by a pauser (`account`) with token ID.",
-            "id": 6696,
+            "id": 6718,
             "name": "Paused",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 6695,
+              "id": 6717,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6692,
+                  "id": 6714,
                   "indexed": false,
                   "name": "tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6696,
+                  "scope": 6718,
                   "src": "1291:15:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2841,7 +2841,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6691,
+                    "id": 6713,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1291:7:67",
@@ -2855,11 +2855,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 6694,
+                  "id": 6716,
                   "indexed": false,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6696,
+                  "scope": 6718,
                   "src": "1308:15:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2868,7 +2868,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6693,
+                    "id": 6715,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1308:7:67",
@@ -2889,20 +2889,20 @@
           {
             "anonymous": false,
             "documentation": "@dev Emitted when the pause is lifted by a pauser (`account`) with token ID.",
-            "id": 6702,
+            "id": 6724,
             "name": "Unpaused",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 6701,
+              "id": 6723,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6698,
+                  "id": 6720,
                   "indexed": false,
                   "name": "tokenId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6702,
+                  "scope": 6724,
                   "src": "1446:15:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2911,7 +2911,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6697,
+                    "id": 6719,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1446:7:67",
@@ -2925,11 +2925,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 6700,
+                  "id": 6722,
                   "indexed": false,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6702,
+                  "scope": 6724,
                   "src": "1463:15:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2938,7 +2938,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6699,
+                    "id": 6721,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1463:7:67",
@@ -2958,7 +2958,7 @@
           },
           {
             "body": {
-              "id": 6713,
+              "id": 6735,
               "nodeType": "Block",
               "src": "1673:41:67",
               "statements": [
@@ -2967,25 +2967,25 @@
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 6709,
+                      "id": 6731,
                       "name": "_tokenPaused",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6679,
+                      "referencedDeclaration": 6701,
                       "src": "1690:12:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_uint256_$_t_bool_$",
                         "typeString": "mapping(uint256 => bool)"
                       }
                     },
-                    "id": 6711,
+                    "id": 6733,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 6710,
+                      "id": 6732,
                       "name": "_id",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6704,
+                      "referencedDeclaration": 6726,
                       "src": "1703:3:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3003,30 +3003,30 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 6708,
-                  "id": 6712,
+                  "functionReturnParameters": 6730,
+                  "id": 6734,
                   "nodeType": "Return",
                   "src": "1683:24:67"
                 }
               ]
             },
             "documentation": "@notice Checks whether the specific token is paused.\n @return True if the specific token is paused, false otherwise",
-            "id": 6714,
+            "id": 6736,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "paused",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6705,
+              "id": 6727,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6704,
+                  "id": 6726,
                   "name": "_id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6714,
+                  "scope": 6736,
                   "src": "1633:11:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3035,7 +3035,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6703,
+                    "id": 6725,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1633:7:67",
@@ -3051,15 +3051,15 @@
               "src": "1632:13:67"
             },
             "returnParameters": {
-              "id": 6708,
+              "id": 6730,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6707,
+                  "id": 6729,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6714,
+                  "scope": 6736,
                   "src": "1667:4:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3068,7 +3068,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 6706,
+                    "id": 6728,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1667:4:67",
@@ -3083,7 +3083,7 @@
               ],
               "src": "1666:6:67"
             },
-            "scope": 6822,
+            "scope": 6844,
             "src": "1617:97:67",
             "stateMutability": "view",
             "superFunction": null,
@@ -3091,7 +3091,7 @@
           },
           {
             "body": {
-              "id": 6742,
+              "id": 6764,
               "nodeType": "Block",
               "src": "1964:157:67",
               "statements": [
@@ -3105,7 +3105,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 6726,
+                        "id": 6748,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3114,25 +3114,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 6722,
+                            "id": 6744,
                             "name": "_tokenPaused",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 6679,
+                            "referencedDeclaration": 6701,
                             "src": "1982:12:67",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_uint256_$_t_bool_$",
                               "typeString": "mapping(uint256 => bool)"
                             }
                           },
-                          "id": 6724,
+                          "id": 6746,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 6723,
+                            "id": 6745,
                             "name": "_id",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 6716,
+                            "referencedDeclaration": 6738,
                             "src": "1995:3:67",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3155,7 +3155,7 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "66616c7365",
-                          "id": 6725,
+                          "id": 6747,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3179,7 +3179,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4b495033375061757361626c653a20616c726561647920706175736564",
-                        "id": 6727,
+                        "id": 6749,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3206,21 +3206,21 @@
                           "typeString": "literal_string \"KIP37Pausable: already paused\""
                         }
                       ],
-                      "id": 6721,
+                      "id": 6743,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7841,
-                        7842
+                        7863,
+                        7864
                       ],
-                      "referencedDeclaration": 7842,
+                      "referencedDeclaration": 7864,
                       "src": "1974:7:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 6728,
+                    "id": 6750,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3234,14 +3234,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6729,
+                  "id": 6751,
                   "nodeType": "ExpressionStatement",
                   "src": "1974:68:67"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6734,
+                    "id": 6756,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3250,25 +3250,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 6730,
+                        "id": 6752,
                         "name": "_tokenPaused",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6679,
+                        "referencedDeclaration": 6701,
                         "src": "2052:12:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_bool_$",
                           "typeString": "mapping(uint256 => bool)"
                         }
                       },
-                      "id": 6732,
+                      "id": 6754,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 6731,
+                        "id": 6753,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6716,
+                        "referencedDeclaration": 6738,
                         "src": "2065:3:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3291,7 +3291,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 6733,
+                      "id": 6755,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3312,7 +3312,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 6735,
+                  "id": 6757,
                   "nodeType": "ExpressionStatement",
                   "src": "2052:24:67"
                 },
@@ -3322,11 +3322,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 6737,
+                        "id": 6759,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6716,
+                        "referencedDeclaration": 6738,
                         "src": "2098:3:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3337,18 +3337,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 6738,
+                          "id": 6760,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7838,
+                          "referencedDeclaration": 7860,
                           "src": "2103:3:67",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 6739,
+                        "id": 6761,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3374,21 +3374,21 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 6736,
+                      "id": 6758,
                       "name": "Paused",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        6696,
-                        1830
+                        6718,
+                        1852
                       ],
-                      "referencedDeclaration": 6696,
+                      "referencedDeclaration": 6718,
                       "src": "2091:6:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_address_$returns$__$",
                         "typeString": "function (uint256,address)"
                       }
                     },
-                    "id": 6740,
+                    "id": 6762,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3402,23 +3402,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6741,
+                  "id": 6763,
                   "nodeType": "EmitStatement",
                   "src": "2086:28:67"
                 }
               ]
             },
             "documentation": "@notice Pauses actions related to transfer and approval of the specific token.\n @dev Throws if `msg.sender` is not allowed to pause.\n   Throws if the specific token is paused.",
-            "id": 6743,
+            "id": 6765,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 6719,
+                "id": 6741,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 6718,
+                  "id": 6740,
                   "name": "onlyPauser",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -3436,15 +3436,15 @@
             "name": "pause",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6717,
+              "id": 6739,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6716,
+                  "id": 6738,
                   "name": "_id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6743,
+                  "scope": 6765,
                   "src": "1933:11:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3453,7 +3453,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6715,
+                    "id": 6737,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1933:7:67",
@@ -3469,12 +3469,12 @@
               "src": "1932:13:67"
             },
             "returnParameters": {
-              "id": 6720,
+              "id": 6742,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1964:0:67"
             },
-            "scope": 6822,
+            "scope": 6844,
             "src": "1918:203:67",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3482,7 +3482,7 @@
           },
           {
             "body": {
-              "id": 6771,
+              "id": 6793,
               "nodeType": "Block",
               "src": "2361:161:67",
               "statements": [
@@ -3496,7 +3496,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 6755,
+                        "id": 6777,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3505,25 +3505,25 @@
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 6751,
+                            "id": 6773,
                             "name": "_tokenPaused",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 6679,
+                            "referencedDeclaration": 6701,
                             "src": "2379:12:67",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_uint256_$_t_bool_$",
                               "typeString": "mapping(uint256 => bool)"
                             }
                           },
-                          "id": 6753,
+                          "id": 6775,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 6752,
+                            "id": 6774,
                             "name": "_id",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 6745,
+                            "referencedDeclaration": 6767,
                             "src": "2392:3:67",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3546,7 +3546,7 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "74727565",
-                          "id": 6754,
+                          "id": 6776,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -3570,7 +3570,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4b495033375061757361626c653a20616c726561647920756e706175736564",
-                        "id": 6756,
+                        "id": 6778,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3597,21 +3597,21 @@
                           "typeString": "literal_string \"KIP37Pausable: already unpaused\""
                         }
                       ],
-                      "id": 6750,
+                      "id": 6772,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7841,
-                        7842
+                        7863,
+                        7864
                       ],
-                      "referencedDeclaration": 7842,
+                      "referencedDeclaration": 7864,
                       "src": "2371:7:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 6757,
+                    "id": 6779,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3625,14 +3625,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6758,
+                  "id": 6780,
                   "nodeType": "ExpressionStatement",
                   "src": "2371:69:67"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 6763,
+                    "id": 6785,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3641,25 +3641,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 6759,
+                        "id": 6781,
                         "name": "_tokenPaused",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6679,
+                        "referencedDeclaration": 6701,
                         "src": "2450:12:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_bool_$",
                           "typeString": "mapping(uint256 => bool)"
                         }
                       },
-                      "id": 6761,
+                      "id": 6783,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 6760,
+                        "id": 6782,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6745,
+                        "referencedDeclaration": 6767,
                         "src": "2463:3:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3682,7 +3682,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 6762,
+                      "id": 6784,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -3703,7 +3703,7 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 6764,
+                  "id": 6786,
                   "nodeType": "ExpressionStatement",
                   "src": "2450:25:67"
                 },
@@ -3713,11 +3713,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 6766,
+                        "id": 6788,
                         "name": "_id",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6745,
+                        "referencedDeclaration": 6767,
                         "src": "2499:3:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3728,18 +3728,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 6767,
+                          "id": 6789,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7838,
+                          "referencedDeclaration": 7860,
                           "src": "2504:3:67",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
                             "typeString": "msg"
                           }
                         },
-                        "id": 6768,
+                        "id": 6790,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3765,21 +3765,21 @@
                           "typeString": "address payable"
                         }
                       ],
-                      "id": 6765,
+                      "id": 6787,
                       "name": "Unpaused",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        6702,
-                        1834
+                        6724,
+                        1856
                       ],
-                      "referencedDeclaration": 6702,
+                      "referencedDeclaration": 6724,
                       "src": "2490:8:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_address_$returns$__$",
                         "typeString": "function (uint256,address)"
                       }
                     },
-                    "id": 6769,
+                    "id": 6791,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3793,23 +3793,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6770,
+                  "id": 6792,
                   "nodeType": "EmitStatement",
                   "src": "2485:30:67"
                 }
               ]
             },
             "documentation": "@notice Resumes from the paused state of the specific token.\n @dev Throws if `msg.sender` is not allowed to unpause.\n   Throws if the specific token is not paused.",
-            "id": 6772,
+            "id": 6794,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 6748,
+                "id": 6770,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 6747,
+                  "id": 6769,
                   "name": "onlyPauser",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
@@ -3827,15 +3827,15 @@
             "name": "unpause",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6746,
+              "id": 6768,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6745,
+                  "id": 6767,
                   "name": "_id",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6772,
+                  "scope": 6794,
                   "src": "2330:11:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3844,7 +3844,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 6744,
+                    "id": 6766,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "2330:7:67",
@@ -3860,12 +3860,12 @@
               "src": "2329:13:67"
             },
             "returnParameters": {
-              "id": 6749,
+              "id": 6771,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2361:0:67"
             },
-            "scope": 6822,
+            "scope": 6844,
             "src": "2313:209:67",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3873,7 +3873,7 @@
           },
           {
             "body": {
-              "id": 6820,
+              "id": 6842,
               "nodeType": "Block",
               "src": "2871:278:67",
               "statements": [
@@ -3883,7 +3883,7 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 6792,
+                        "id": 6814,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -3897,21 +3897,21 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 6790,
+                            "id": 6812,
                             "name": "paused",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [
-                              6714,
-                              1852
+                              6736,
+                              1874
                             ],
-                            "referencedDeclaration": 1852,
+                            "referencedDeclaration": 1874,
                             "src": "2890:6:67",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_bool_$",
                               "typeString": "function () view returns (bool)"
                             }
                           },
-                          "id": 6791,
+                          "id": 6813,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3933,7 +3933,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4b495033375061757361626c653a20746f6b656e207472616e73666572207768696c6520706175736564",
-                        "id": 6793,
+                        "id": 6815,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3960,21 +3960,21 @@
                           "typeString": "literal_string \"KIP37Pausable: token transfer while paused\""
                         }
                       ],
-                      "id": 6789,
+                      "id": 6811,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        7841,
-                        7842
+                        7863,
+                        7864
                       ],
-                      "referencedDeclaration": 7842,
+                      "referencedDeclaration": 7864,
                       "src": "2881:7:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 6794,
+                    "id": 6816,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3988,13 +3988,13 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 6795,
+                  "id": 6817,
                   "nodeType": "ExpressionStatement",
                   "src": "2881:64:67"
                 },
                 {
                   "body": {
-                    "id": 6818,
+                    "id": 6840,
                     "nodeType": "Block",
                     "src": "2996:147:67",
                     "statements": [
@@ -4008,7 +4008,7 @@
                                 "typeIdentifier": "t_bool",
                                 "typeString": "bool"
                               },
-                              "id": 6814,
+                              "id": 6836,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -4017,41 +4017,41 @@
                                 "argumentTypes": null,
                                 "baseExpression": {
                                   "argumentTypes": null,
-                                  "id": 6808,
+                                  "id": 6830,
                                   "name": "_tokenPaused",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 6679,
+                                  "referencedDeclaration": 6701,
                                   "src": "3035:12:67",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_mapping$_t_uint256_$_t_bool_$",
                                     "typeString": "mapping(uint256 => bool)"
                                   }
                                 },
-                                "id": 6812,
+                                "id": 6834,
                                 "indexExpression": {
                                   "argumentTypes": null,
                                   "baseExpression": {
                                     "argumentTypes": null,
-                                    "id": 6809,
+                                    "id": 6831,
                                     "name": "ids",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 6781,
+                                    "referencedDeclaration": 6803,
                                     "src": "3048:3:67",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
                                       "typeString": "uint256[] memory"
                                     }
                                   },
-                                  "id": 6811,
+                                  "id": 6833,
                                   "indexExpression": {
                                     "argumentTypes": null,
-                                    "id": 6810,
+                                    "id": 6832,
                                     "name": "i",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 6797,
+                                    "referencedDeclaration": 6819,
                                     "src": "3052:1:67",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -4085,7 +4085,7 @@
                               "rightExpression": {
                                 "argumentTypes": null,
                                 "hexValue": "66616c7365",
-                                "id": 6813,
+                                "id": 6835,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": true,
@@ -4109,7 +4109,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "4b495033375061757361626c653a2074686520746f6b656e20697320706175736564",
-                              "id": 6815,
+                              "id": 6837,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -4136,21 +4136,21 @@
                                 "typeString": "literal_string \"KIP37Pausable: the token is paused\""
                               }
                             ],
-                            "id": 6807,
+                            "id": 6829,
                             "name": "require",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [
-                              7841,
-                              7842
+                              7863,
+                              7864
                             ],
-                            "referencedDeclaration": 7842,
+                            "referencedDeclaration": 7864,
                             "src": "3010:7:67",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                               "typeString": "function (bool,string memory) pure"
                             }
                           },
-                          "id": 6816,
+                          "id": 6838,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -4164,7 +4164,7 @@
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 6817,
+                        "id": 6839,
                         "nodeType": "ExpressionStatement",
                         "src": "3010:122:67"
                       }
@@ -4176,18 +4176,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 6803,
+                    "id": 6825,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 6800,
+                      "id": 6822,
                       "name": "i",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 6797,
+                      "referencedDeclaration": 6819,
                       "src": "2975:1:67",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -4200,18 +4200,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 6801,
+                        "id": 6823,
                         "name": "ids",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6781,
+                        "referencedDeclaration": 6803,
                         "src": "2979:3:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
                           "typeString": "uint256[] memory"
                         }
                       },
-                      "id": 6802,
+                      "id": 6824,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4231,18 +4231,18 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 6819,
+                  "id": 6841,
                   "initializationExpression": {
                     "assignments": [
-                      6797
+                      6819
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 6797,
+                        "id": 6819,
                         "name": "i",
                         "nodeType": "VariableDeclaration",
-                        "scope": 6819,
+                        "scope": 6841,
                         "src": "2960:9:67",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -4251,7 +4251,7 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 6796,
+                          "id": 6818,
                           "name": "uint256",
                           "nodeType": "ElementaryTypeName",
                           "src": "2960:7:67",
@@ -4264,11 +4264,11 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 6799,
+                    "id": 6821,
                     "initialValue": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 6798,
+                      "id": 6820,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -4289,7 +4289,7 @@
                   "loopExpression": {
                     "expression": {
                       "argumentTypes": null,
-                      "id": 6805,
+                      "id": 6827,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4300,11 +4300,11 @@
                       "src": "2991:3:67",
                       "subExpression": {
                         "argumentTypes": null,
-                        "id": 6804,
+                        "id": 6826,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 6797,
+                        "referencedDeclaration": 6819,
                         "src": "2991:1:67",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -4316,7 +4316,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 6806,
+                    "id": 6828,
                     "nodeType": "ExpressionStatement",
                     "src": "2991:3:67"
                   },
@@ -4326,22 +4326,22 @@
               ]
             },
             "documentation": "@dev See {KIP37-_beforeTokenTransfer}.\n     * Requirements:\n     * - the contract must not be paused.",
-            "id": 6821,
+            "id": 6843,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_beforeTokenTransfer",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 6787,
+              "id": 6809,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 6774,
+                  "id": 6796,
                   "name": "operator",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6821,
+                  "scope": 6843,
                   "src": "2706:16:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4350,7 +4350,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6773,
+                    "id": 6795,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2706:7:67",
@@ -4365,10 +4365,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 6776,
+                  "id": 6798,
                   "name": "from",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6821,
+                  "scope": 6843,
                   "src": "2732:12:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4377,7 +4377,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6775,
+                    "id": 6797,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2732:7:67",
@@ -4392,10 +4392,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 6778,
+                  "id": 6800,
                   "name": "to",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6821,
+                  "scope": 6843,
                   "src": "2754:10:67",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -4404,7 +4404,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 6777,
+                    "id": 6799,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "2754:7:67",
@@ -4419,10 +4419,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 6781,
+                  "id": 6803,
                   "name": "ids",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6821,
+                  "scope": 6843,
                   "src": "2774:20:67",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4432,7 +4432,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 6779,
+                      "id": 6801,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
                       "src": "2774:7:67",
@@ -4441,7 +4441,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 6780,
+                    "id": 6802,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "2774:9:67",
@@ -4455,10 +4455,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 6784,
+                  "id": 6806,
                   "name": "amounts",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6821,
+                  "scope": 6843,
                   "src": "2804:24:67",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4468,7 +4468,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 6782,
+                      "id": 6804,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
                       "src": "2804:7:67",
@@ -4477,7 +4477,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 6783,
+                    "id": 6805,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "2804:9:67",
@@ -4491,10 +4491,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 6786,
+                  "id": 6808,
                   "name": "data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 6821,
+                  "scope": 6843,
                   "src": "2838:17:67",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -4503,7 +4503,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 6785,
+                    "id": 6807,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "2838:5:67",
@@ -4519,19 +4519,19 @@
               "src": "2696:165:67"
             },
             "returnParameters": {
-              "id": 6788,
+              "id": 6810,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2871:0:67"
             },
-            "scope": 6822,
+            "scope": 6844,
             "src": "2667:482:67",
             "stateMutability": "nonpayable",
-            "superFunction": 6043,
+            "superFunction": 6065,
             "visibility": "internal"
           }
         ],
-        "scope": 6823,
+        "scope": 6845,
         "src": "420:2731:67"
       }
     ],
@@ -4543,7 +4543,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.11",
-  "updatedAt": "2021-11-10T06:27:09.414Z",
+  "updatedAt": "2021-11-12T04:14:53.856Z",
   "devdoc": {
     "details": "KIP37 token with pausable token transfers, minting and burning. * Useful for scenarios such as preventing trades until the end of an evaluation period, or having an emergency switch for freezing all token transfers in the event of a large bug. * _Available since v3.1._",
     "methods": {
