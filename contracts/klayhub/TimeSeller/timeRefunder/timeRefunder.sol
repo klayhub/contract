@@ -1,11 +1,11 @@
 pragma solidity ^0.5.0;
 
-import "../../token/KIP17/IKIP17Full.sol";
-import "../../token/KIP7/IKIP7.sol";
-import "../../token/KIP7/IKIP7Receiver.sol";
-import "../../math/SafeMath.sol";
-import "../../utils/Address.sol";
-import "../../ownership/Ownable.sol";
+import "../../../token/KIP17/IKIP17Full.sol";
+import "../../../token/KIP7/IKIP7.sol";
+import "../../../token/KIP7/IKIP7Receiver.sol";
+import "../../../math/SafeMath.sol";
+import "../../../utils/Address.sol";
+import "../../../ownership/Ownable.sol";
 
 // 추가로 필요한 기능들
 // 1. hNFT 토큰 전송

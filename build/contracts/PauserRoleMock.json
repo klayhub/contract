@@ -91,25 +91,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"onlyPauserMock\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isPauser\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"removePauser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renouncePauser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addPauser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"PauserAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"PauserRemoved\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/humblefirm/Github/contract/contracts/mocks/PauserRoleMock.sol\":\"PauserRoleMock\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/humblefirm/Github/contract/contracts/access/Roles.sol\":{\"keccak256\":\"0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb\",\"urls\":[\"bzzr://bd34c1ce05b5b2b3a62fc02e160f6805b1cadd476854664f433c685b2fda8dad\"]},\"/Users/humblefirm/Github/contract/contracts/access/roles/PauserRole.sol\":{\"keccak256\":\"0xf6826c684d51ca28db5293ce11a54c5cca1c757b6cd32b87613833c65086f995\",\"urls\":[\"bzzr://01b2756ab5b41b1d7ccadfeac53fbdce9c889263f1e011329c300c5fa3fda65f\"]},\"/Users/humblefirm/Github/contract/contracts/mocks/PauserRoleMock.sol\":{\"keccak256\":\"0x794a85febd18a7ad12e6263f35f556b961b53099f42eee8edbd9bd119a492b77\",\"urls\":[\"bzzr://8423e08ca36498f28831e00ae489525ad40cc1e70eadc027adc5b796a6d0460e\"]}},\"version\":1}",
-  "bytecode": "0x60806040526100133361001860201b60201c565b610235565b61003081600061007660201b6103f01790919060201c565b8073ffffffffffffffffffffffffffffffffffffffff167f6719d08c1888103bea251a4ed56406bd0c3e69723c8a1686e017e7bbe159b6f860405160405180910390a250565b610086828261015760201b60201c565b156100f9576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f526f6c65733a206163636f756e7420616c72656164792068617320726f6c650081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff1614156101de576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602281526020018061086b6022913960400191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b610627806102446000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c8063329daf901461005c57806346fbf68e146100665780636b2c0f55146100c25780636ef8d66d1461010657806382dc1ec414610110575b600080fd5b610064610154565b005b6100a86004803603602081101561007c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101b4565b604051808215151515815260200191505060405180910390f35b610104600480360360208110156100d857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d1565b005b61010e6101dd565b005b6101526004803603602081101561012657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101e8565b005b61015d336101b4565b6101b2576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b565b60006101ca82600061025290919063ffffffff16565b9050919050565b6101da81610330565b50565b6101e633610330565b565b6101f1336101b4565b610246576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b61024f8161033c565b50565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff1614156102d9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001806105da6022913960400191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b61033981610396565b50565b6103508160006103f090919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f6719d08c1888103bea251a4ed56406bd0c3e69723c8a1686e017e7bbe159b6f860405160405180910390a250565b6103aa8160006104cb90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fcd265ebaf09df2871cc7bd4133404a235ba12eff2041bb89d9c714a2621c7c7e60405160405180910390a250565b6103fa8282610252565b1561046d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f526f6c65733a206163636f756e7420616c72656164792068617320726f6c650081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b6104d58282610252565b61052a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806105b96021913960400191505060405180910390fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908315150217905550505056fe506175736572526f6c653a2063616c6c657220646f6573206e6f742068617665207468652050617573657220726f6c65526f6c65733a206163636f756e7420646f6573206e6f74206861766520726f6c65526f6c65733a206163636f756e7420697320746865207a65726f2061646472657373a165627a7a723058202376d464e955781dfe804a845265ae26f245c512b2099e8937e4de5422c2f2dc0029526f6c65733a206163636f756e7420697320746865207a65726f2061646472657373",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c8063329daf901461005c57806346fbf68e146100665780636b2c0f55146100c25780636ef8d66d1461010657806382dc1ec414610110575b600080fd5b610064610154565b005b6100a86004803603602081101561007c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101b4565b604051808215151515815260200191505060405180910390f35b610104600480360360208110156100d857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d1565b005b61010e6101dd565b005b6101526004803603602081101561012657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101e8565b005b61015d336101b4565b6101b2576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b565b60006101ca82600061025290919063ffffffff16565b9050919050565b6101da81610330565b50565b6101e633610330565b565b6101f1336101b4565b610246576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b61024f8161033c565b50565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff1614156102d9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001806105da6022913960400191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b61033981610396565b50565b6103508160006103f090919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f6719d08c1888103bea251a4ed56406bd0c3e69723c8a1686e017e7bbe159b6f860405160405180910390a250565b6103aa8160006104cb90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fcd265ebaf09df2871cc7bd4133404a235ba12eff2041bb89d9c714a2621c7c7e60405160405180910390a250565b6103fa8282610252565b1561046d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f526f6c65733a206163636f756e7420616c72656164792068617320726f6c650081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b6104d58282610252565b61052a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806105b96021913960400191505060405180910390fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908315150217905550505056fe506175736572526f6c653a2063616c6c657220646f6573206e6f742068617665207468652050617573657220726f6c65526f6c65733a206163636f756e7420646f6573206e6f74206861766520726f6c65526f6c65733a206163636f756e7420697320746865207a65726f2061646472657373a165627a7a723058202376d464e955781dfe804a845265ae26f245c512b2099e8937e4de5422c2f2dc0029",
-  "sourceMap": "67:423:42:-;;;275:22:4;286:10;275;;;:22;;:::i;:::-;67:423:42;;737:119:4;793:21;806:7;793:8;:12;;;;;;:21;;;;:::i;:::-;841:7;829:20;;;;;;;;;;;;737:119;:::o;260:175:2:-;337:18;341:4;347:7;337:3;;;:18;;:::i;:::-;336:19;328:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;424:4;401;:11;;:20;413:7;401:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;260:175;;:::o;779:200::-;851:4;894:1;875:21;;:7;:21;;;;867:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;952:4;:11;;:20;964:7;952:20;;;;;;;;;;;;;;;;;;;;;;;;;945:27;;779:200;;;;:::o;67:423:42:-;;;;;;;",
-  "deployedSourceMap": "67:423:42:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;67:423:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;202:113;;;:::i;:::-;;447:107:4;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;447:107:4;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;111:85:42;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;111:85:42;;;;;;;;;;;;;;;;;;;:::i;:::-;;656:75:4;;;:::i;:::-;;560:90;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;560:90:4;;;;;;;;;;;;;;;;;;;:::i;:::-;;202:113:42;350:20:4;359:10;350:8;:20::i;:::-;342:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;202:113:42:o;447:107:4:-;503:4;526:21;539:7;526:8;:12;;:21;;;;:::i;:::-;519:28;;447:107;;;:::o;111:85:42:-;167:22;181:7;167:13;:22::i;:::-;111:85;:::o;656:75:4:-;699:25;713:10;699:13;:25::i;:::-;656:75::o;560:90::-;350:20;359:10;350:8;:20::i;:::-;342:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;624:19;635:7;624:10;:19::i;:::-;560:90;:::o;779:200:2:-;851:4;894:1;875:21;;:7;:21;;;;867:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;952:4;:11;;:20;964:7;952:20;;;;;;;;;;;;;;;;;;;;;;;;;945:27;;779:200;;;;:::o;394:94:42:-;453:28;473:7;453:19;:28::i;:::-;394:94;:::o;737:119:4:-;793:21;806:7;793:8;:12;;:21;;;;:::i;:::-;841:7;829:20;;;;;;;;;;;;737:119;:::o;862:127::-;921:24;937:7;921:8;:15;;:24;;;;:::i;:::-;974:7;960:22;;;;;;;;;;;;862:127;:::o;260:175:2:-;337:18;341:4;347:7;337:3;:18::i;:::-;336:19;328:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;424:4;401;:11;;:20;413:7;401:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;260:175;;:::o;510:180::-;589:18;593:4;599:7;589:3;:18::i;:::-;581:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;678:5;655:4;:11;;:20;667:7;655:20;;;;;;;;;;;;;;;;:28;;;;;;;;;;;;;;;;;;510:180;;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"onlyPauserMock\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isPauser\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"removePauser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renouncePauser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addPauser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"PauserAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"PauserRemoved\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/gimseontae/Desktop/project/contract/contracts/mocks/PauserRoleMock.sol\":\"PauserRoleMock\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gimseontae/Desktop/project/contract/contracts/access/Roles.sol\":{\"keccak256\":\"0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb\",\"urls\":[\"bzzr://bd34c1ce05b5b2b3a62fc02e160f6805b1cadd476854664f433c685b2fda8dad\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/access/roles/PauserRole.sol\":{\"keccak256\":\"0xf6826c684d51ca28db5293ce11a54c5cca1c757b6cd32b87613833c65086f995\",\"urls\":[\"bzzr://01b2756ab5b41b1d7ccadfeac53fbdce9c889263f1e011329c300c5fa3fda65f\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/mocks/PauserRoleMock.sol\":{\"keccak256\":\"0x794a85febd18a7ad12e6263f35f556b961b53099f42eee8edbd9bd119a492b77\",\"urls\":[\"bzzr://8423e08ca36498f28831e00ae489525ad40cc1e70eadc027adc5b796a6d0460e\"]}},\"version\":1}",
+  "bytecode": "0x60806040526100133361001860201b60201c565b610235565b61003081600061007660201b6103f01790919060201c565b8073ffffffffffffffffffffffffffffffffffffffff167f6719d08c1888103bea251a4ed56406bd0c3e69723c8a1686e017e7bbe159b6f860405160405180910390a250565b610086828261015760201b60201c565b156100f9576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f526f6c65733a206163636f756e7420616c72656164792068617320726f6c650081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff1614156101de576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602281526020018061086b6022913960400191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b610627806102446000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c8063329daf901461005c57806346fbf68e146100665780636b2c0f55146100c25780636ef8d66d1461010657806382dc1ec414610110575b600080fd5b610064610154565b005b6100a86004803603602081101561007c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101b4565b604051808215151515815260200191505060405180910390f35b610104600480360360208110156100d857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d1565b005b61010e6101dd565b005b6101526004803603602081101561012657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101e8565b005b61015d336101b4565b6101b2576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b565b60006101ca82600061025290919063ffffffff16565b9050919050565b6101da81610330565b50565b6101e633610330565b565b6101f1336101b4565b610246576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b61024f8161033c565b50565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff1614156102d9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001806105da6022913960400191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b61033981610396565b50565b6103508160006103f090919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f6719d08c1888103bea251a4ed56406bd0c3e69723c8a1686e017e7bbe159b6f860405160405180910390a250565b6103aa8160006104cb90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fcd265ebaf09df2871cc7bd4133404a235ba12eff2041bb89d9c714a2621c7c7e60405160405180910390a250565b6103fa8282610252565b1561046d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f526f6c65733a206163636f756e7420616c72656164792068617320726f6c650081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b6104d58282610252565b61052a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806105b96021913960400191505060405180910390fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908315150217905550505056fe506175736572526f6c653a2063616c6c657220646f6573206e6f742068617665207468652050617573657220726f6c65526f6c65733a206163636f756e7420646f6573206e6f74206861766520726f6c65526f6c65733a206163636f756e7420697320746865207a65726f2061646472657373a165627a7a7230582090969bcf4a46f52d9233b6a286e28c812b488bd7b5d0a3dc55dff13635d0de420029526f6c65733a206163636f756e7420697320746865207a65726f2061646472657373",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c8063329daf901461005c57806346fbf68e146100665780636b2c0f55146100c25780636ef8d66d1461010657806382dc1ec414610110575b600080fd5b610064610154565b005b6100a86004803603602081101561007c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101b4565b604051808215151515815260200191505060405180910390f35b610104600480360360208110156100d857600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d1565b005b61010e6101dd565b005b6101526004803603602081101561012657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101e8565b005b61015d336101b4565b6101b2576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b565b60006101ca82600061025290919063ffffffff16565b9050919050565b6101da81610330565b50565b6101e633610330565b565b6101f1336101b4565b610246576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b61024f8161033c565b50565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff1614156102d9576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001806105da6022913960400191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b61033981610396565b50565b6103508160006103f090919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f6719d08c1888103bea251a4ed56406bd0c3e69723c8a1686e017e7bbe159b6f860405160405180910390a250565b6103aa8160006104cb90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fcd265ebaf09df2871cc7bd4133404a235ba12eff2041bb89d9c714a2621c7c7e60405160405180910390a250565b6103fa8282610252565b1561046d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f526f6c65733a206163636f756e7420616c72656164792068617320726f6c650081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b6104d58282610252565b61052a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806105b96021913960400191505060405180910390fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908315150217905550505056fe506175736572526f6c653a2063616c6c657220646f6573206e6f742068617665207468652050617573657220726f6c65526f6c65733a206163636f756e7420646f6573206e6f74206861766520726f6c65526f6c65733a206163636f756e7420697320746865207a65726f2061646472657373a165627a7a7230582090969bcf4a46f52d9233b6a286e28c812b488bd7b5d0a3dc55dff13635d0de420029",
+  "sourceMap": "67:423:44:-;;;275:22:4;286:10;275;;;:22;;:::i;:::-;67:423:44;;737:119:4;793:21;806:7;793:8;:12;;;;;;:21;;;;:::i;:::-;841:7;829:20;;;;;;;;;;;;737:119;:::o;260:175:2:-;337:18;341:4;347:7;337:3;;;:18;;:::i;:::-;336:19;328:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;424:4;401;:11;;:20;413:7;401:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;260:175;;:::o;779:200::-;851:4;894:1;875:21;;:7;:21;;;;867:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;952:4;:11;;:20;964:7;952:20;;;;;;;;;;;;;;;;;;;;;;;;;945:27;;779:200;;;;:::o;67:423:44:-;;;;;;;",
+  "deployedSourceMap": "67:423:44:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;67:423:44;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;202:113;;;:::i;:::-;;447:107:4;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;447:107:4;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;111:85:44;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;111:85:44;;;;;;;;;;;;;;;;;;;:::i;:::-;;656:75:4;;;:::i;:::-;;560:90;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;560:90:4;;;;;;;;;;;;;;;;;;;:::i;:::-;;202:113:44;350:20:4;359:10;350:8;:20::i;:::-;342:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;202:113:44:o;447:107:4:-;503:4;526:21;539:7;526:8;:12;;:21;;;;:::i;:::-;519:28;;447:107;;;:::o;111:85:44:-;167:22;181:7;167:13;:22::i;:::-;111:85;:::o;656:75:4:-;699:25;713:10;699:13;:25::i;:::-;656:75::o;560:90::-;350:20;359:10;350:8;:20::i;:::-;342:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;624:19;635:7;624:10;:19::i;:::-;560:90;:::o;779:200:2:-;851:4;894:1;875:21;;:7;:21;;;;867:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;952:4;:11;;:20;964:7;952:20;;;;;;;;;;;;;;;;;;;;;;;;;945:27;;779:200;;;;:::o;394:94:44:-;453:28;473:7;453:19;:28::i;:::-;394:94;:::o;737:119:4:-;793:21;806:7;793:8;:12;;:21;;;;:::i;:::-;841:7;829:20;;;;;;;;;;;;737:119;:::o;862:127::-;921:24;937:7;921:8;:15;;:24;;;;:::i;:::-;974:7;960:22;;;;;;;;;;;;862:127;:::o;260:175:2:-;337:18;341:4;347:7;337:3;:18::i;:::-;336:19;328:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;424:4;401;:11;;:20;413:7;401:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;260:175;;:::o;510:180::-;589:18;593:4;599:7;589:3;:18::i;:::-;581:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;678:5;655:4;:11;;:20;667:7;655:20;;;;;;;;;;;;;;;;:28;;;;;;;;;;;;;;;;;;510:180;;:::o",
   "source": "pragma solidity ^0.5.0;\n\nimport \"../access/roles/PauserRole.sol\";\n\ncontract PauserRoleMock is PauserRole {\n    function removePauser(address account) public {\n        _removePauser(account);\n    }\n\n    function onlyPauserMock() public view onlyPauser {\n        // solhint-disable-previous-line no-empty-blocks\n    }\n\n    // Causes a compilation error if super._removePauser is not internal\n    function _removePauser(address account) internal {\n        super._removePauser(account);\n    }\n}\n",
-  "sourcePath": "/Users/humblefirm/Github/contract/contracts/mocks/PauserRoleMock.sol",
+  "sourcePath": "/Users/gimseontae/Desktop/project/contract/contracts/mocks/PauserRoleMock.sol",
   "ast": {
-    "absolutePath": "/Users/humblefirm/Github/contract/contracts/mocks/PauserRoleMock.sol",
+    "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/mocks/PauserRoleMock.sol",
     "exportedSymbols": {
       "PauserRoleMock": [
-        3280
+        4336
       ]
     },
-    "id": 3281,
+    "id": 4337,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3248,
+        "id": 4304,
         "literals": [
           "solidity",
           "^",
@@ -117,16 +117,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:42"
+        "src": "0:23:44"
       },
       {
-        "absolutePath": "/Users/humblefirm/Github/contract/contracts/access/roles/PauserRole.sol",
+        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/access/roles/PauserRole.sol",
         "file": "../access/roles/PauserRole.sol",
-        "id": 3249,
+        "id": 4305,
         "nodeType": "ImportDirective",
-        "scope": 3281,
+        "scope": 4337,
         "sourceUnit": 353,
-        "src": "25:40:42",
+        "src": "25:40:44",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -136,19 +136,19 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 3250,
+              "id": 4306,
               "name": "PauserRole",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 352,
-              "src": "94:10:42",
+              "src": "94:10:44",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_PauserRole_$352",
                 "typeString": "contract PauserRole"
               }
             },
-            "id": 3251,
+            "id": 4307,
             "nodeType": "InheritanceSpecifier",
-            "src": "94:10:42"
+            "src": "94:10:44"
           }
         ],
         "contractDependencies": [
@@ -157,9 +157,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 3280,
+        "id": 4336,
         "linearizedBaseContracts": [
-          3280,
+          4336,
           352
         ],
         "name": "PauserRoleMock",
@@ -167,9 +167,9 @@
         "nodes": [
           {
             "body": {
-              "id": 3260,
+              "id": 4316,
               "nodeType": "Block",
-              "src": "157:39:42",
+              "src": "157:39:44",
               "statements": [
                 {
                   "expression": {
@@ -177,12 +177,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3257,
+                        "id": 4313,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3253,
-                        "src": "181:7:42",
+                        "referencedDeclaration": 4309,
+                        "src": "181:7:44",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -196,20 +196,20 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 3256,
+                      "id": 4312,
                       "name": "_removePauser",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3279
+                        4335
                       ],
-                      "referencedDeclaration": 3279,
-                      "src": "167:13:42",
+                      "referencedDeclaration": 4335,
+                      "src": "167:13:44",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 3258,
+                    "id": 4314,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -217,36 +217,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "167:22:42",
+                    "src": "167:22:44",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3259,
+                  "id": 4315,
                   "nodeType": "ExpressionStatement",
-                  "src": "167:22:42"
+                  "src": "167:22:44"
                 }
               ]
             },
             "documentation": null,
-            "id": 3261,
+            "id": 4317,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "removePauser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3254,
+              "id": 4310,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3253,
+                  "id": 4309,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3261,
-                  "src": "133:15:42",
+                  "scope": 4317,
+                  "src": "133:15:44",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -254,10 +254,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3252,
+                    "id": 4308,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "133:7:42",
+                    "src": "133:7:44",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -268,77 +268,77 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "132:17:42"
+              "src": "132:17:44"
             },
             "returnParameters": {
-              "id": 3255,
+              "id": 4311,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "157:0:42"
+              "src": "157:0:44"
             },
-            "scope": 3280,
-            "src": "111:85:42",
+            "scope": 4336,
+            "src": "111:85:44",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 3266,
+              "id": 4322,
               "nodeType": "Block",
-              "src": "251:64:42",
+              "src": "251:64:44",
               "statements": []
             },
             "documentation": null,
-            "id": 3267,
+            "id": 4323,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 3264,
+                "id": 4320,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3263,
+                  "id": 4319,
                   "name": "onlyPauser",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
                   "referencedDeclaration": 285,
-                  "src": "240:10:42",
+                  "src": "240:10:44",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "240:10:42"
+                "src": "240:10:44"
               }
             ],
             "name": "onlyPauserMock",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3262,
+              "id": 4318,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "225:2:42"
+              "src": "225:2:44"
             },
             "returnParameters": {
-              "id": 3265,
+              "id": 4321,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "251:0:42"
+              "src": "251:0:44"
             },
-            "scope": 3280,
-            "src": "202:113:42",
+            "scope": 4336,
+            "src": "202:113:44",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 3278,
+              "id": 4334,
               "nodeType": "Block",
-              "src": "443:45:42",
+              "src": "443:45:44",
               "statements": [
                 {
                   "expression": {
@@ -346,12 +346,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3275,
+                        "id": 4331,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3269,
-                        "src": "473:7:42",
+                        "referencedDeclaration": 4325,
+                        "src": "473:7:44",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -367,18 +367,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3272,
+                        "id": 4328,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7975,
-                        "src": "453:5:42",
+                        "referencedDeclaration": 9267,
+                        "src": "453:5:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_PauserRoleMock_$3280",
+                          "typeIdentifier": "t_super$_PauserRoleMock_$4336",
                           "typeString": "contract super PauserRoleMock"
                         }
                       },
-                      "id": 3274,
+                      "id": 4330,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -386,13 +386,13 @@
                       "memberName": "_removePauser",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 351,
-                      "src": "453:19:42",
+                      "src": "453:19:44",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 3276,
+                    "id": 4332,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -400,36 +400,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "453:28:42",
+                    "src": "453:28:44",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3277,
+                  "id": 4333,
                   "nodeType": "ExpressionStatement",
-                  "src": "453:28:42"
+                  "src": "453:28:44"
                 }
               ]
             },
             "documentation": null,
-            "id": 3279,
+            "id": 4335,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_removePauser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3270,
+              "id": 4326,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3269,
+                  "id": 4325,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3279,
-                  "src": "417:15:42",
+                  "scope": 4335,
+                  "src": "417:15:44",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -437,10 +437,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3268,
+                    "id": 4324,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "417:7:42",
+                    "src": "417:7:44",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -451,39 +451,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "416:17:42"
+              "src": "416:17:44"
             },
             "returnParameters": {
-              "id": 3271,
+              "id": 4327,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "443:0:42"
+              "src": "443:0:44"
             },
-            "scope": 3280,
-            "src": "394:94:42",
+            "scope": 4336,
+            "src": "394:94:44",
             "stateMutability": "nonpayable",
             "superFunction": 351,
             "visibility": "internal"
           }
         ],
-        "scope": 3281,
-        "src": "67:423:42"
+        "scope": 4337,
+        "src": "67:423:44"
       }
     ],
-    "src": "0:491:42"
+    "src": "0:491:44"
   },
   "legacyAST": {
-    "absolutePath": "/Users/humblefirm/Github/contract/contracts/mocks/PauserRoleMock.sol",
+    "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/mocks/PauserRoleMock.sol",
     "exportedSymbols": {
       "PauserRoleMock": [
-        3280
+        4336
       ]
     },
-    "id": 3281,
+    "id": 4337,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3248,
+        "id": 4304,
         "literals": [
           "solidity",
           "^",
@@ -491,16 +491,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:42"
+        "src": "0:23:44"
       },
       {
-        "absolutePath": "/Users/humblefirm/Github/contract/contracts/access/roles/PauserRole.sol",
+        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/access/roles/PauserRole.sol",
         "file": "../access/roles/PauserRole.sol",
-        "id": 3249,
+        "id": 4305,
         "nodeType": "ImportDirective",
-        "scope": 3281,
+        "scope": 4337,
         "sourceUnit": 353,
-        "src": "25:40:42",
+        "src": "25:40:44",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -510,19 +510,19 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 3250,
+              "id": 4306,
               "name": "PauserRole",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 352,
-              "src": "94:10:42",
+              "src": "94:10:44",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_PauserRole_$352",
                 "typeString": "contract PauserRole"
               }
             },
-            "id": 3251,
+            "id": 4307,
             "nodeType": "InheritanceSpecifier",
-            "src": "94:10:42"
+            "src": "94:10:44"
           }
         ],
         "contractDependencies": [
@@ -531,9 +531,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 3280,
+        "id": 4336,
         "linearizedBaseContracts": [
-          3280,
+          4336,
           352
         ],
         "name": "PauserRoleMock",
@@ -541,9 +541,9 @@
         "nodes": [
           {
             "body": {
-              "id": 3260,
+              "id": 4316,
               "nodeType": "Block",
-              "src": "157:39:42",
+              "src": "157:39:44",
               "statements": [
                 {
                   "expression": {
@@ -551,12 +551,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3257,
+                        "id": 4313,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3253,
-                        "src": "181:7:42",
+                        "referencedDeclaration": 4309,
+                        "src": "181:7:44",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -570,20 +570,20 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 3256,
+                      "id": 4312,
                       "name": "_removePauser",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3279
+                        4335
                       ],
-                      "referencedDeclaration": 3279,
-                      "src": "167:13:42",
+                      "referencedDeclaration": 4335,
+                      "src": "167:13:44",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 3258,
+                    "id": 4314,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -591,36 +591,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "167:22:42",
+                    "src": "167:22:44",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3259,
+                  "id": 4315,
                   "nodeType": "ExpressionStatement",
-                  "src": "167:22:42"
+                  "src": "167:22:44"
                 }
               ]
             },
             "documentation": null,
-            "id": 3261,
+            "id": 4317,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "removePauser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3254,
+              "id": 4310,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3253,
+                  "id": 4309,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3261,
-                  "src": "133:15:42",
+                  "scope": 4317,
+                  "src": "133:15:44",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -628,10 +628,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3252,
+                    "id": 4308,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "133:7:42",
+                    "src": "133:7:44",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -642,77 +642,77 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "132:17:42"
+              "src": "132:17:44"
             },
             "returnParameters": {
-              "id": 3255,
+              "id": 4311,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "157:0:42"
+              "src": "157:0:44"
             },
-            "scope": 3280,
-            "src": "111:85:42",
+            "scope": 4336,
+            "src": "111:85:44",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 3266,
+              "id": 4322,
               "nodeType": "Block",
-              "src": "251:64:42",
+              "src": "251:64:44",
               "statements": []
             },
             "documentation": null,
-            "id": 3267,
+            "id": 4323,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 3264,
+                "id": 4320,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3263,
+                  "id": 4319,
                   "name": "onlyPauser",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
                   "referencedDeclaration": 285,
-                  "src": "240:10:42",
+                  "src": "240:10:44",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "240:10:42"
+                "src": "240:10:44"
               }
             ],
             "name": "onlyPauserMock",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3262,
+              "id": 4318,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "225:2:42"
+              "src": "225:2:44"
             },
             "returnParameters": {
-              "id": 3265,
+              "id": 4321,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "251:0:42"
+              "src": "251:0:44"
             },
-            "scope": 3280,
-            "src": "202:113:42",
+            "scope": 4336,
+            "src": "202:113:44",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 3278,
+              "id": 4334,
               "nodeType": "Block",
-              "src": "443:45:42",
+              "src": "443:45:44",
               "statements": [
                 {
                   "expression": {
@@ -720,12 +720,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3275,
+                        "id": 4331,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3269,
-                        "src": "473:7:42",
+                        "referencedDeclaration": 4325,
+                        "src": "473:7:44",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -741,18 +741,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3272,
+                        "id": 4328,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7975,
-                        "src": "453:5:42",
+                        "referencedDeclaration": 9267,
+                        "src": "453:5:44",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_PauserRoleMock_$3280",
+                          "typeIdentifier": "t_super$_PauserRoleMock_$4336",
                           "typeString": "contract super PauserRoleMock"
                         }
                       },
-                      "id": 3274,
+                      "id": 4330,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -760,13 +760,13 @@
                       "memberName": "_removePauser",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 351,
-                      "src": "453:19:42",
+                      "src": "453:19:44",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 3276,
+                    "id": 4332,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -774,36 +774,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "453:28:42",
+                    "src": "453:28:44",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3277,
+                  "id": 4333,
                   "nodeType": "ExpressionStatement",
-                  "src": "453:28:42"
+                  "src": "453:28:44"
                 }
               ]
             },
             "documentation": null,
-            "id": 3279,
+            "id": 4335,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_removePauser",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3270,
+              "id": 4326,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3269,
+                  "id": 4325,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3279,
-                  "src": "417:15:42",
+                  "scope": 4335,
+                  "src": "417:15:44",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -811,10 +811,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3268,
+                    "id": 4324,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "417:7:42",
+                    "src": "417:7:44",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -825,26 +825,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "416:17:42"
+              "src": "416:17:44"
             },
             "returnParameters": {
-              "id": 3271,
+              "id": 4327,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "443:0:42"
+              "src": "443:0:44"
             },
-            "scope": 3280,
-            "src": "394:94:42",
+            "scope": 4336,
+            "src": "394:94:44",
             "stateMutability": "nonpayable",
             "superFunction": 351,
             "visibility": "internal"
           }
         ],
-        "scope": 3281,
-        "src": "67:423:42"
+        "scope": 4337,
+        "src": "67:423:44"
       }
     ],
-    "src": "0:491:42"
+    "src": "0:491:44"
   },
   "compiler": {
     "name": "solc",
@@ -852,7 +852,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.11",
-  "updatedAt": "2021-11-12T04:14:53.803Z",
+  "updatedAt": "2021-11-18T17:17:08.607Z",
   "devdoc": {
     "methods": {}
   },

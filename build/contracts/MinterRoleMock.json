@@ -91,25 +91,25 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"removeMinter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addMinter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceMinter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isMinter\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"onlyMinterMock\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"MinterAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"MinterRemoved\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/humblefirm/Github/contract/contracts/mocks/MinterRoleMock.sol\":\"MinterRoleMock\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/humblefirm/Github/contract/contracts/access/Roles.sol\":{\"keccak256\":\"0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb\",\"urls\":[\"bzzr://bd34c1ce05b5b2b3a62fc02e160f6805b1cadd476854664f433c685b2fda8dad\"]},\"/Users/humblefirm/Github/contract/contracts/access/roles/MinterRole.sol\":{\"keccak256\":\"0x63da54a7a5d4e4d82ac8d1f4f7f995fd8ef2b5fe1f2960b83e534fa37fb60910\",\"urls\":[\"bzzr://cea53b805426e40efadb24f2613aca39182462e9ecd23fde7aacf0c4b5885aaf\"]},\"/Users/humblefirm/Github/contract/contracts/mocks/MinterRoleMock.sol\":{\"keccak256\":\"0x210100268eeb248ae06b8ab6421113ad8454d4d9a78aaeced15e8afb0050f556\",\"urls\":[\"bzzr://e99806768487c7f029b07cf3b9cffec9ba638009e07fce9e6e58fea8d527cfb5\"]}},\"version\":1}",
-  "bytecode": "0x60806040526100133361001860201b60201c565b610235565b61003081600061007660201b6103f01790919060201c565b8073ffffffffffffffffffffffffffffffffffffffff167f6ae172837ea30b801fbfcdd4108aa1d5bf8ff775444fd70256b44e6bf3dfc3f660405160405180910390a250565b610086828261015760201b60201c565b156100f9576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f526f6c65733a206163636f756e7420616c72656164792068617320726f6c650081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff1614156101de576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602281526020018061086b6022913960400191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b610627806102446000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80633092afd51461005c578063983b2d56146100a057806398650275146100e4578063aa271e1a146100ee578063b5dba35b1461014a575b600080fd5b61009e6004803603602081101561007257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610154565b005b6100e2600480360360208110156100b657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610160565b005b6100ec6101ca565b005b6101306004803603602081101561010457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d5565b604051808215151515815260200191505060405180910390f35b6101526101f2565b005b61015d81610252565b50565b610169336101d5565b6101be576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b6101c78161025e565b50565b6101d333610252565b565b60006101eb8260006102b890919063ffffffff16565b9050919050565b6101fb336101d5565b610250576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b565b61025b81610396565b50565b6102728160006103f090919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f6ae172837ea30b801fbfcdd4108aa1d5bf8ff775444fd70256b44e6bf3dfc3f660405160405180910390a250565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141561033f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001806105da6022913960400191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6103aa8160006104cb90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fe94479a9f7e1952cc78f2d6baab678adc1b772d936c6583def489e524cb6669260405160405180910390a250565b6103fa82826102b8565b1561046d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f526f6c65733a206163636f756e7420616c72656164792068617320726f6c650081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b6104d582826102b8565b61052a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806105b96021913960400191505060405180910390fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908315150217905550505056fe4d696e746572526f6c653a2063616c6c657220646f6573206e6f74206861766520746865204d696e74657220726f6c65526f6c65733a206163636f756e7420646f6573206e6f74206861766520726f6c65526f6c65733a206163636f756e7420697320746865207a65726f2061646472657373a165627a7a723058209991eff487e5ae88b11064f8d831954a7f9173c14b7d8e2722901b399f3ce58f0029526f6c65733a206163636f756e7420697320746865207a65726f2061646472657373",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80633092afd51461005c578063983b2d56146100a057806398650275146100e4578063aa271e1a146100ee578063b5dba35b1461014a575b600080fd5b61009e6004803603602081101561007257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610154565b005b6100e2600480360360208110156100b657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610160565b005b6100ec6101ca565b005b6101306004803603602081101561010457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d5565b604051808215151515815260200191505060405180910390f35b6101526101f2565b005b61015d81610252565b50565b610169336101d5565b6101be576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b6101c78161025e565b50565b6101d333610252565b565b60006101eb8260006102b890919063ffffffff16565b9050919050565b6101fb336101d5565b610250576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b565b61025b81610396565b50565b6102728160006103f090919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f6ae172837ea30b801fbfcdd4108aa1d5bf8ff775444fd70256b44e6bf3dfc3f660405160405180910390a250565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141561033f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001806105da6022913960400191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6103aa8160006104cb90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fe94479a9f7e1952cc78f2d6baab678adc1b772d936c6583def489e524cb6669260405160405180910390a250565b6103fa82826102b8565b1561046d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f526f6c65733a206163636f756e7420616c72656164792068617320726f6c650081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b6104d582826102b8565b61052a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806105b96021913960400191505060405180910390fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908315150217905550505056fe4d696e746572526f6c653a2063616c6c657220646f6573206e6f74206861766520746865204d696e74657220726f6c65526f6c65733a206163636f756e7420646f6573206e6f74206861766520726f6c65526f6c65733a206163636f756e7420697320746865207a65726f2061646472657373a165627a7a723058209991eff487e5ae88b11064f8d831954a7f9173c14b7d8e2722901b399f3ce58f0029",
-  "sourceMap": "67:423:41:-;;;275:22:3;286:10;275;;;:22;;:::i;:::-;67:423:41;;737:119:3;793:21;806:7;793:8;:12;;;;;;:21;;;;:::i;:::-;841:7;829:20;;;;;;;;;;;;737:119;:::o;260:175:2:-;337:18;341:4;347:7;337:3;;;:18;;:::i;:::-;336:19;328:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;424:4;401;:11;;:20;413:7;401:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;260:175;;:::o;779:200::-;851:4;894:1;875:21;;:7;:21;;;;867:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;952:4;:11;;:20;964:7;952:20;;;;;;;;;;;;;;;;;;;;;;;;;945:27;;779:200;;;;:::o;67:423:41:-;;;;;;;",
-  "deployedSourceMap": "67:423:41:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;67:423:41;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;111:85;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;111:85:41;;;;;;;;;;;;;;;;;;;:::i;:::-;;560:90:3;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;560:90:3;;;;;;;;;;;;;;;;;;;:::i;:::-;;656:75;;;:::i;:::-;;447:107;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;447:107:3;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;202:113:41;;;:::i;:::-;;111:85;167:22;181:7;167:13;:22::i;:::-;111:85;:::o;560:90:3:-;350:20;359:10;350:8;:20::i;:::-;342:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;624:19;635:7;624:10;:19::i;:::-;560:90;:::o;656:75::-;699:25;713:10;699:13;:25::i;:::-;656:75::o;447:107::-;503:4;526:21;539:7;526:8;:12;;:21;;;;:::i;:::-;519:28;;447:107;;;:::o;202:113:41:-;350:20:3;359:10;350:8;:20::i;:::-;342:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;202:113:41:o;394:94::-;453:28;473:7;453:19;:28::i;:::-;394:94;:::o;737:119:3:-;793:21;806:7;793:8;:12;;:21;;;;:::i;:::-;841:7;829:20;;;;;;;;;;;;737:119;:::o;779:200:2:-;851:4;894:1;875:21;;:7;:21;;;;867:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;952:4;:11;;:20;964:7;952:20;;;;;;;;;;;;;;;;;;;;;;;;;945:27;;779:200;;;;:::o;862:127:3:-;921:24;937:7;921:8;:15;;:24;;;;:::i;:::-;974:7;960:22;;;;;;;;;;;;862:127;:::o;260:175:2:-;337:18;341:4;347:7;337:3;:18::i;:::-;336:19;328:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;424:4;401;:11;;:20;413:7;401:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;260:175;;:::o;510:180::-;589:18;593:4;599:7;589:3;:18::i;:::-;581:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;678:5;655:4;:11;;:20;667:7;655:20;;;;;;;;;;;;;;;;:28;;;;;;;;;;;;;;;;;;510:180;;:::o",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"removeMinter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"addMinter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"renounceMinter\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"account\",\"type\":\"address\"}],\"name\":\"isMinter\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"onlyMinterMock\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"MinterAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"account\",\"type\":\"address\"}],\"name\":\"MinterRemoved\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/gimseontae/Desktop/project/contract/contracts/mocks/MinterRoleMock.sol\":\"MinterRoleMock\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gimseontae/Desktop/project/contract/contracts/access/Roles.sol\":{\"keccak256\":\"0xb002c378d7b82a101bd659c341518953ca0919d342c0a400196982c0e7e7bcdb\",\"urls\":[\"bzzr://bd34c1ce05b5b2b3a62fc02e160f6805b1cadd476854664f433c685b2fda8dad\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/access/roles/MinterRole.sol\":{\"keccak256\":\"0x63da54a7a5d4e4d82ac8d1f4f7f995fd8ef2b5fe1f2960b83e534fa37fb60910\",\"urls\":[\"bzzr://cea53b805426e40efadb24f2613aca39182462e9ecd23fde7aacf0c4b5885aaf\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/mocks/MinterRoleMock.sol\":{\"keccak256\":\"0x210100268eeb248ae06b8ab6421113ad8454d4d9a78aaeced15e8afb0050f556\",\"urls\":[\"bzzr://e99806768487c7f029b07cf3b9cffec9ba638009e07fce9e6e58fea8d527cfb5\"]}},\"version\":1}",
+  "bytecode": "0x60806040526100133361001860201b60201c565b610235565b61003081600061007660201b6103f01790919060201c565b8073ffffffffffffffffffffffffffffffffffffffff167f6ae172837ea30b801fbfcdd4108aa1d5bf8ff775444fd70256b44e6bf3dfc3f660405160405180910390a250565b610086828261015760201b60201c565b156100f9576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f526f6c65733a206163636f756e7420616c72656164792068617320726f6c650081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff1614156101de576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602281526020018061086b6022913960400191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b610627806102446000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80633092afd51461005c578063983b2d56146100a057806398650275146100e4578063aa271e1a146100ee578063b5dba35b1461014a575b600080fd5b61009e6004803603602081101561007257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610154565b005b6100e2600480360360208110156100b657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610160565b005b6100ec6101ca565b005b6101306004803603602081101561010457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d5565b604051808215151515815260200191505060405180910390f35b6101526101f2565b005b61015d81610252565b50565b610169336101d5565b6101be576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b6101c78161025e565b50565b6101d333610252565b565b60006101eb8260006102b890919063ffffffff16565b9050919050565b6101fb336101d5565b610250576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b565b61025b81610396565b50565b6102728160006103f090919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f6ae172837ea30b801fbfcdd4108aa1d5bf8ff775444fd70256b44e6bf3dfc3f660405160405180910390a250565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141561033f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001806105da6022913960400191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6103aa8160006104cb90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fe94479a9f7e1952cc78f2d6baab678adc1b772d936c6583def489e524cb6669260405160405180910390a250565b6103fa82826102b8565b1561046d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f526f6c65733a206163636f756e7420616c72656164792068617320726f6c650081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b6104d582826102b8565b61052a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806105b96021913960400191505060405180910390fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908315150217905550505056fe4d696e746572526f6c653a2063616c6c657220646f6573206e6f74206861766520746865204d696e74657220726f6c65526f6c65733a206163636f756e7420646f6573206e6f74206861766520726f6c65526f6c65733a206163636f756e7420697320746865207a65726f2061646472657373a165627a7a723058206e78196447528774c0621ffc454bdc6b586ef4f2bb549739593ecf272673a40e0029526f6c65733a206163636f756e7420697320746865207a65726f2061646472657373",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80633092afd51461005c578063983b2d56146100a057806398650275146100e4578063aa271e1a146100ee578063b5dba35b1461014a575b600080fd5b61009e6004803603602081101561007257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610154565b005b6100e2600480360360208110156100b657600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610160565b005b6100ec6101ca565b005b6101306004803603602081101561010457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506101d5565b604051808215151515815260200191505060405180910390f35b6101526101f2565b005b61015d81610252565b50565b610169336101d5565b6101be576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b6101c78161025e565b50565b6101d333610252565b565b60006101eb8260006102b890919063ffffffff16565b9050919050565b6101fb336101d5565b610250576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260308152602001806105896030913960400191505060405180910390fd5b565b61025b81610396565b50565b6102728160006103f090919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167f6ae172837ea30b801fbfcdd4108aa1d5bf8ff775444fd70256b44e6bf3dfc3f660405160405180910390a250565b60008073ffffffffffffffffffffffffffffffffffffffff168273ffffffffffffffffffffffffffffffffffffffff16141561033f576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260228152602001806105da6022913960400191505060405180910390fd5b8260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060009054906101000a900460ff16905092915050565b6103aa8160006104cb90919063ffffffff16565b8073ffffffffffffffffffffffffffffffffffffffff167fe94479a9f7e1952cc78f2d6baab678adc1b772d936c6583def489e524cb6669260405160405180910390a250565b6103fa82826102b8565b1561046d576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252601f8152602001807f526f6c65733a206163636f756e7420616c72656164792068617320726f6c650081525060200191505060405180910390fd5b60018260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff0219169083151502179055505050565b6104d582826102b8565b61052a576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825260218152602001806105b96021913960400191505060405180910390fd5b60008260000160008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060006101000a81548160ff021916908315150217905550505056fe4d696e746572526f6c653a2063616c6c657220646f6573206e6f74206861766520746865204d696e74657220726f6c65526f6c65733a206163636f756e7420646f6573206e6f74206861766520726f6c65526f6c65733a206163636f756e7420697320746865207a65726f2061646472657373a165627a7a723058206e78196447528774c0621ffc454bdc6b586ef4f2bb549739593ecf272673a40e0029",
+  "sourceMap": "67:423:43:-;;;275:22:3;286:10;275;;;:22;;:::i;:::-;67:423:43;;737:119:3;793:21;806:7;793:8;:12;;;;;;:21;;;;:::i;:::-;841:7;829:20;;;;;;;;;;;;737:119;:::o;260:175:2:-;337:18;341:4;347:7;337:3;;;:18;;:::i;:::-;336:19;328:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;424:4;401;:11;;:20;413:7;401:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;260:175;;:::o;779:200::-;851:4;894:1;875:21;;:7;:21;;;;867:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;952:4;:11;;:20;964:7;952:20;;;;;;;;;;;;;;;;;;;;;;;;;945:27;;779:200;;;;:::o;67:423:43:-;;;;;;;",
+  "deployedSourceMap": "67:423:43:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;67:423:43;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;111:85;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;111:85:43;;;;;;;;;;;;;;;;;;;:::i;:::-;;560:90:3;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;560:90:3;;;;;;;;;;;;;;;;;;;:::i;:::-;;656:75;;;:::i;:::-;;447:107;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;447:107:3;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;202:113:43;;;:::i;:::-;;111:85;167:22;181:7;167:13;:22::i;:::-;111:85;:::o;560:90:3:-;350:20;359:10;350:8;:20::i;:::-;342:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;624:19;635:7;624:10;:19::i;:::-;560:90;:::o;656:75::-;699:25;713:10;699:13;:25::i;:::-;656:75::o;447:107::-;503:4;526:21;539:7;526:8;:12;;:21;;;;:::i;:::-;519:28;;447:107;;;:::o;202:113:43:-;350:20:3;359:10;350:8;:20::i;:::-;342:81;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;202:113:43:o;394:94::-;453:28;473:7;453:19;:28::i;:::-;394:94;:::o;737:119:3:-;793:21;806:7;793:8;:12;;:21;;;;:::i;:::-;841:7;829:20;;;;;;;;;;;;737:119;:::o;779:200:2:-;851:4;894:1;875:21;;:7;:21;;;;867:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;952:4;:11;;:20;964:7;952:20;;;;;;;;;;;;;;;;;;;;;;;;;945:27;;779:200;;;;:::o;862:127:3:-;921:24;937:7;921:8;:15;;:24;;;;:::i;:::-;974:7;960:22;;;;;;;;;;;;862:127;:::o;260:175:2:-;337:18;341:4;347:7;337:3;:18::i;:::-;336:19;328:63;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;424:4;401;:11;;:20;413:7;401:20;;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;260:175;;:::o;510:180::-;589:18;593:4;599:7;589:3;:18::i;:::-;581:64;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;678:5;655:4;:11;;:20;667:7;655:20;;;;;;;;;;;;;;;;:28;;;;;;;;;;;;;;;;;;510:180;;:::o",
   "source": "pragma solidity ^0.5.0;\n\nimport \"../access/roles/MinterRole.sol\";\n\ncontract MinterRoleMock is MinterRole {\n    function removeMinter(address account) public {\n        _removeMinter(account);\n    }\n\n    function onlyMinterMock() public view onlyMinter {\n        // solhint-disable-previous-line no-empty-blocks\n    }\n\n    // Causes a compilation error if super._removeMinter is not internal\n    function _removeMinter(address account) internal {\n        super._removeMinter(account);\n    }\n}\n",
-  "sourcePath": "/Users/humblefirm/Github/contract/contracts/mocks/MinterRoleMock.sol",
+  "sourcePath": "/Users/gimseontae/Desktop/project/contract/contracts/mocks/MinterRoleMock.sol",
   "ast": {
-    "absolutePath": "/Users/humblefirm/Github/contract/contracts/mocks/MinterRoleMock.sol",
+    "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/mocks/MinterRoleMock.sol",
     "exportedSymbols": {
       "MinterRoleMock": [
-        3246
+        4302
       ]
     },
-    "id": 3247,
+    "id": 4303,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3214,
+        "id": 4270,
         "literals": [
           "solidity",
           "^",
@@ -117,16 +117,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:41"
+        "src": "0:23:43"
       },
       {
-        "absolutePath": "/Users/humblefirm/Github/contract/contracts/access/roles/MinterRole.sol",
+        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/access/roles/MinterRole.sol",
         "file": "../access/roles/MinterRole.sol",
-        "id": 3215,
+        "id": 4271,
         "nodeType": "ImportDirective",
-        "scope": 3247,
+        "scope": 4303,
         "sourceUnit": 249,
-        "src": "25:40:41",
+        "src": "25:40:43",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -136,19 +136,19 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 3216,
+              "id": 4272,
               "name": "MinterRole",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 248,
-              "src": "94:10:41",
+              "src": "94:10:43",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_MinterRole_$248",
                 "typeString": "contract MinterRole"
               }
             },
-            "id": 3217,
+            "id": 4273,
             "nodeType": "InheritanceSpecifier",
-            "src": "94:10:41"
+            "src": "94:10:43"
           }
         ],
         "contractDependencies": [
@@ -157,9 +157,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 3246,
+        "id": 4302,
         "linearizedBaseContracts": [
-          3246,
+          4302,
           248
         ],
         "name": "MinterRoleMock",
@@ -167,9 +167,9 @@
         "nodes": [
           {
             "body": {
-              "id": 3226,
+              "id": 4282,
               "nodeType": "Block",
-              "src": "157:39:41",
+              "src": "157:39:43",
               "statements": [
                 {
                   "expression": {
@@ -177,12 +177,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3223,
+                        "id": 4279,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3219,
-                        "src": "181:7:41",
+                        "referencedDeclaration": 4275,
+                        "src": "181:7:43",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -196,20 +196,20 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 3222,
+                      "id": 4278,
                       "name": "_removeMinter",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3245
+                        4301
                       ],
-                      "referencedDeclaration": 3245,
-                      "src": "167:13:41",
+                      "referencedDeclaration": 4301,
+                      "src": "167:13:43",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 3224,
+                    "id": 4280,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -217,36 +217,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "167:22:41",
+                    "src": "167:22:43",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3225,
+                  "id": 4281,
                   "nodeType": "ExpressionStatement",
-                  "src": "167:22:41"
+                  "src": "167:22:43"
                 }
               ]
             },
             "documentation": null,
-            "id": 3227,
+            "id": 4283,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "removeMinter",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3220,
+              "id": 4276,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3219,
+                  "id": 4275,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3227,
-                  "src": "133:15:41",
+                  "scope": 4283,
+                  "src": "133:15:43",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -254,10 +254,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3218,
+                    "id": 4274,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "133:7:41",
+                    "src": "133:7:43",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -268,77 +268,77 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "132:17:41"
+              "src": "132:17:43"
             },
             "returnParameters": {
-              "id": 3221,
+              "id": 4277,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "157:0:41"
+              "src": "157:0:43"
             },
-            "scope": 3246,
-            "src": "111:85:41",
+            "scope": 4302,
+            "src": "111:85:43",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 3232,
+              "id": 4288,
               "nodeType": "Block",
-              "src": "251:64:41",
+              "src": "251:64:43",
               "statements": []
             },
             "documentation": null,
-            "id": 3233,
+            "id": 4289,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 3230,
+                "id": 4286,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3229,
+                  "id": 4285,
                   "name": "onlyMinter",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
                   "referencedDeclaration": 181,
-                  "src": "240:10:41",
+                  "src": "240:10:43",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "240:10:41"
+                "src": "240:10:43"
               }
             ],
             "name": "onlyMinterMock",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3228,
+              "id": 4284,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "225:2:41"
+              "src": "225:2:43"
             },
             "returnParameters": {
-              "id": 3231,
+              "id": 4287,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "251:0:41"
+              "src": "251:0:43"
             },
-            "scope": 3246,
-            "src": "202:113:41",
+            "scope": 4302,
+            "src": "202:113:43",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 3244,
+              "id": 4300,
               "nodeType": "Block",
-              "src": "443:45:41",
+              "src": "443:45:43",
               "statements": [
                 {
                   "expression": {
@@ -346,12 +346,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3241,
+                        "id": 4297,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3235,
-                        "src": "473:7:41",
+                        "referencedDeclaration": 4291,
+                        "src": "473:7:43",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -367,18 +367,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3238,
+                        "id": 4294,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8019,
-                        "src": "453:5:41",
+                        "referencedDeclaration": 9303,
+                        "src": "453:5:43",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_MinterRoleMock_$3246",
+                          "typeIdentifier": "t_super$_MinterRoleMock_$4302",
                           "typeString": "contract super MinterRoleMock"
                         }
                       },
-                      "id": 3240,
+                      "id": 4296,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -386,13 +386,13 @@
                       "memberName": "_removeMinter",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 247,
-                      "src": "453:19:41",
+                      "src": "453:19:43",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 3242,
+                    "id": 4298,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -400,36 +400,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "453:28:41",
+                    "src": "453:28:43",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3243,
+                  "id": 4299,
                   "nodeType": "ExpressionStatement",
-                  "src": "453:28:41"
+                  "src": "453:28:43"
                 }
               ]
             },
             "documentation": null,
-            "id": 3245,
+            "id": 4301,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_removeMinter",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3236,
+              "id": 4292,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3235,
+                  "id": 4291,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3245,
-                  "src": "417:15:41",
+                  "scope": 4301,
+                  "src": "417:15:43",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -437,10 +437,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3234,
+                    "id": 4290,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "417:7:41",
+                    "src": "417:7:43",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -451,39 +451,39 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "416:17:41"
+              "src": "416:17:43"
             },
             "returnParameters": {
-              "id": 3237,
+              "id": 4293,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "443:0:41"
+              "src": "443:0:43"
             },
-            "scope": 3246,
-            "src": "394:94:41",
+            "scope": 4302,
+            "src": "394:94:43",
             "stateMutability": "nonpayable",
             "superFunction": 247,
             "visibility": "internal"
           }
         ],
-        "scope": 3247,
-        "src": "67:423:41"
+        "scope": 4303,
+        "src": "67:423:43"
       }
     ],
-    "src": "0:491:41"
+    "src": "0:491:43"
   },
   "legacyAST": {
-    "absolutePath": "/Users/humblefirm/Github/contract/contracts/mocks/MinterRoleMock.sol",
+    "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/mocks/MinterRoleMock.sol",
     "exportedSymbols": {
       "MinterRoleMock": [
-        3246
+        4302
       ]
     },
-    "id": 3247,
+    "id": 4303,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3214,
+        "id": 4270,
         "literals": [
           "solidity",
           "^",
@@ -491,16 +491,16 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:41"
+        "src": "0:23:43"
       },
       {
-        "absolutePath": "/Users/humblefirm/Github/contract/contracts/access/roles/MinterRole.sol",
+        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/access/roles/MinterRole.sol",
         "file": "../access/roles/MinterRole.sol",
-        "id": 3215,
+        "id": 4271,
         "nodeType": "ImportDirective",
-        "scope": 3247,
+        "scope": 4303,
         "sourceUnit": 249,
-        "src": "25:40:41",
+        "src": "25:40:43",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -510,19 +510,19 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 3216,
+              "id": 4272,
               "name": "MinterRole",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 248,
-              "src": "94:10:41",
+              "src": "94:10:43",
               "typeDescriptions": {
                 "typeIdentifier": "t_contract$_MinterRole_$248",
                 "typeString": "contract MinterRole"
               }
             },
-            "id": 3217,
+            "id": 4273,
             "nodeType": "InheritanceSpecifier",
-            "src": "94:10:41"
+            "src": "94:10:43"
           }
         ],
         "contractDependencies": [
@@ -531,9 +531,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 3246,
+        "id": 4302,
         "linearizedBaseContracts": [
-          3246,
+          4302,
           248
         ],
         "name": "MinterRoleMock",
@@ -541,9 +541,9 @@
         "nodes": [
           {
             "body": {
-              "id": 3226,
+              "id": 4282,
               "nodeType": "Block",
-              "src": "157:39:41",
+              "src": "157:39:43",
               "statements": [
                 {
                   "expression": {
@@ -551,12 +551,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3223,
+                        "id": 4279,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3219,
-                        "src": "181:7:41",
+                        "referencedDeclaration": 4275,
+                        "src": "181:7:43",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -570,20 +570,20 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 3222,
+                      "id": 4278,
                       "name": "_removeMinter",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        3245
+                        4301
                       ],
-                      "referencedDeclaration": 3245,
-                      "src": "167:13:41",
+                      "referencedDeclaration": 4301,
+                      "src": "167:13:43",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 3224,
+                    "id": 4280,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -591,36 +591,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "167:22:41",
+                    "src": "167:22:43",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3225,
+                  "id": 4281,
                   "nodeType": "ExpressionStatement",
-                  "src": "167:22:41"
+                  "src": "167:22:43"
                 }
               ]
             },
             "documentation": null,
-            "id": 3227,
+            "id": 4283,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "removeMinter",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3220,
+              "id": 4276,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3219,
+                  "id": 4275,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3227,
-                  "src": "133:15:41",
+                  "scope": 4283,
+                  "src": "133:15:43",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -628,10 +628,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3218,
+                    "id": 4274,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "133:7:41",
+                    "src": "133:7:43",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -642,77 +642,77 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "132:17:41"
+              "src": "132:17:43"
             },
             "returnParameters": {
-              "id": 3221,
+              "id": 4277,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "157:0:41"
+              "src": "157:0:43"
             },
-            "scope": 3246,
-            "src": "111:85:41",
+            "scope": 4302,
+            "src": "111:85:43",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 3232,
+              "id": 4288,
               "nodeType": "Block",
-              "src": "251:64:41",
+              "src": "251:64:43",
               "statements": []
             },
             "documentation": null,
-            "id": 3233,
+            "id": 4289,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 3230,
+                "id": 4286,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3229,
+                  "id": 4285,
                   "name": "onlyMinter",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
                   "referencedDeclaration": 181,
-                  "src": "240:10:41",
+                  "src": "240:10:43",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
                     "typeString": "modifier ()"
                   }
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "240:10:41"
+                "src": "240:10:43"
               }
             ],
             "name": "onlyMinterMock",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3228,
+              "id": 4284,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "225:2:41"
+              "src": "225:2:43"
             },
             "returnParameters": {
-              "id": 3231,
+              "id": 4287,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "251:0:41"
+              "src": "251:0:43"
             },
-            "scope": 3246,
-            "src": "202:113:41",
+            "scope": 4302,
+            "src": "202:113:43",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 3244,
+              "id": 4300,
               "nodeType": "Block",
-              "src": "443:45:41",
+              "src": "443:45:43",
               "statements": [
                 {
                   "expression": {
@@ -720,12 +720,12 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3241,
+                        "id": 4297,
                         "name": "account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3235,
-                        "src": "473:7:41",
+                        "referencedDeclaration": 4291,
+                        "src": "473:7:43",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -741,18 +741,18 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 3238,
+                        "id": 4294,
                         "name": "super",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8019,
-                        "src": "453:5:41",
+                        "referencedDeclaration": 9303,
+                        "src": "453:5:43",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_super$_MinterRoleMock_$3246",
+                          "typeIdentifier": "t_super$_MinterRoleMock_$4302",
                           "typeString": "contract super MinterRoleMock"
                         }
                       },
-                      "id": 3240,
+                      "id": 4296,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -760,13 +760,13 @@
                       "memberName": "_removeMinter",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 247,
-                      "src": "453:19:41",
+                      "src": "453:19:43",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
                         "typeString": "function (address)"
                       }
                     },
-                    "id": 3242,
+                    "id": 4298,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -774,36 +774,36 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "453:28:41",
+                    "src": "453:28:43",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3243,
+                  "id": 4299,
                   "nodeType": "ExpressionStatement",
-                  "src": "453:28:41"
+                  "src": "453:28:43"
                 }
               ]
             },
             "documentation": null,
-            "id": 3245,
+            "id": 4301,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
             "name": "_removeMinter",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3236,
+              "id": 4292,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3235,
+                  "id": 4291,
                   "name": "account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3245,
-                  "src": "417:15:41",
+                  "scope": 4301,
+                  "src": "417:15:43",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -811,10 +811,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3234,
+                    "id": 4290,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "417:7:41",
+                    "src": "417:7:43",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -825,26 +825,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "416:17:41"
+              "src": "416:17:43"
             },
             "returnParameters": {
-              "id": 3237,
+              "id": 4293,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "443:0:41"
+              "src": "443:0:43"
             },
-            "scope": 3246,
-            "src": "394:94:41",
+            "scope": 4302,
+            "src": "394:94:43",
             "stateMutability": "nonpayable",
             "superFunction": 247,
             "visibility": "internal"
           }
         ],
-        "scope": 3247,
-        "src": "67:423:41"
+        "scope": 4303,
+        "src": "67:423:43"
       }
     ],
-    "src": "0:491:41"
+    "src": "0:491:43"
   },
   "compiler": {
     "name": "solc",
@@ -852,7 +852,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.11",
-  "updatedAt": "2021-11-12T04:14:53.803Z",
+  "updatedAt": "2021-11-18T17:17:08.607Z",
   "devdoc": {
     "methods": {}
   },
