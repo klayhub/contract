@@ -11,10 +11,11 @@ import "./StructuredLinkedList.sol";
 
 // Token = NFT token
 
+contract NFT is IKIP17Full, Ownable {}
+
 contract MarketPlace is Ownable {
     using SafeMath for uint256;
     using Address for address;
-    using Ownable for IKIP17Full;
     using StructuredLinkedList for StructuredLinkedList.List;
 
     StructuredLinkedList.List List;
@@ -42,7 +43,7 @@ contract MarketPlace is Ownable {
         require(_isKUSDT == true);
 
         // transfer NFT seller->Contract
-        IKIP17Full(_token).transferFrom(msg.sender, address(this), _tokenId);
+        NFT(_token).transferFrom(msg.sender, address(this), _tokenId);
 
         // make offer
         uint256 id = cumulativeSales++;
@@ -63,7 +64,7 @@ contract MarketPlace is Ownable {
         require(List.nodeExists(id), "Offer does not exist");
 
         // transfer NFT Contract->buyer
-        IKIP17Full(TokenById[id]).transferFrom(address(this), msg.sender, TokenIdById[id]);
+        NFT(TokenById[id]).transferFrom(address(this), msg.sender, TokenIdById[id]);
 
         // remove from list
         List.remove(id);
@@ -160,7 +161,7 @@ contract MarketPlace is Ownable {
 
     // set originator for token owner
     function SetOriginator(address _token) public {
-        require(IKIP17Full(_token).isOwner(), "Invalid originator");
+        require(NFT(_token).isOwner(), "Invalid originator");
         SetOriginator(_token, msg.sender);
     }
     
