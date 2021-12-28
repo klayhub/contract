@@ -14,6 +14,7 @@ import "./StructuredLinkedList.sol";
 contract MarketPlace is Ownable {
     using SafeMath for uint256;
     using Address for address;
+    using Ownable for IKIP17Full;
     using StructuredLinkedList for StructuredLinkedList.List;
 
     StructuredLinkedList.List List;
@@ -147,13 +148,20 @@ contract MarketPlace is Ownable {
     }
 
     // set originator fee rate
-    function SetOriginatorFeeRate(address _token, uint256 _originatorFeeRate) public onlyOwner {
+    function SetOriginatorFeeRate(address _token, uint256 _originatorFeeRate) public {
+        require(OriginatorByToken[_token] == msg.sender, "You are not the originator of this token");
         OriginatorFeeRateByToken[_token] = _originatorFeeRate;
     }
 
     // set originator address
     function SetOriginator(address _token, address payable _originator) public onlyOwner {
         OriginatorByToken[_token] = _originator;
+    }
+
+    // set originator for token owner
+    function SetOriginator(address _token) public {
+        require(IKIP17Full(_token).isOwner(), "Invalid originator");
+        SetOriginator(_token, msg.sender);
     }
     
 }
