@@ -2,16 +2,160 @@
   "contractName": "IKIP17Full",
   "abi": [
     {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "approved",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approval",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "approved",
+          "type": "bool"
+        }
+      ],
+      "name": "ApprovalForAll",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "approve",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
       "constant": true,
       "inputs": [
         {
-          "name": "interfaceId",
-          "type": "bytes4"
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
         }
       ],
-      "name": "supportsInterface",
+      "name": "balanceOf",
       "outputs": [
         {
+          "internalType": "uint256",
+          "name": "balance",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getApproved",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "isApprovedForAll",
+      "outputs": [
+        {
+          "internalType": "bool",
           "name": "",
           "type": "bool"
         }
@@ -26,6 +170,7 @@
       "name": "name",
       "outputs": [
         {
+          "internalType": "string",
           "name": "",
           "type": "string"
         }
@@ -38,92 +183,17 @@
       "constant": true,
       "inputs": [
         {
+          "internalType": "uint256",
           "name": "tokenId",
           "type": "uint256"
         }
       ],
-      "name": "getApproved",
+      "name": "ownerOf",
       "outputs": [
         {
-          "name": "operator",
-          "type": "address"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "to",
-          "type": "address"
-        },
-        {
-          "name": "tokenId",
-          "type": "uint256"
-        }
-      ],
-      "name": "approve",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [],
-      "name": "totalSupply",
-      "outputs": [
-        {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "from",
-          "type": "address"
-        },
-        {
-          "name": "to",
-          "type": "address"
-        },
-        {
-          "name": "tokenId",
-          "type": "uint256"
-        }
-      ],
-      "name": "transferFrom",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
-        {
+          "internalType": "address",
           "name": "owner",
           "type": "address"
-        },
-        {
-          "name": "index",
-          "type": "uint256"
-        }
-      ],
-      "name": "tokenOfOwnerByIndex",
-      "outputs": [
-        {
-          "name": "tokenId",
-          "type": "uint256"
         }
       ],
       "payable": false,
@@ -134,14 +204,17 @@
       "constant": false,
       "inputs": [
         {
+          "internalType": "address",
           "name": "from",
           "type": "address"
         },
         {
+          "internalType": "address",
           "name": "to",
           "type": "address"
         },
         {
+          "internalType": "uint256",
           "name": "tokenId",
           "type": "uint256"
         }
@@ -153,56 +226,70 @@
       "type": "function"
     },
     {
-      "constant": true,
+      "constant": false,
       "inputs": [
         {
-          "name": "index",
-          "type": "uint256"
-        }
-      ],
-      "name": "tokenByIndex",
-      "outputs": [
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
         {
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "payable": false,
-      "stateMutability": "view",
-      "type": "function"
-    },
-    {
-      "constant": true,
-      "inputs": [
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
         {
+          "internalType": "uint256",
           "name": "tokenId",
           "type": "uint256"
-        }
-      ],
-      "name": "ownerOf",
-      "outputs": [
+        },
         {
-          "name": "owner",
-          "type": "address"
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
         }
       ],
+      "name": "safeTransferFrom",
+      "outputs": [],
       "payable": false,
-      "stateMutability": "view",
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "internalType": "bool",
+          "name": "_approved",
+          "type": "bool"
+        }
+      ],
+      "name": "setApprovalForAll",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
       "type": "function"
     },
     {
       "constant": true,
       "inputs": [
         {
-          "name": "owner",
-          "type": "address"
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
         }
       ],
-      "name": "balanceOf",
+      "name": "supportsInterface",
       "outputs": [
         {
-          "name": "balance",
-          "type": "uint256"
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
         }
       ],
       "payable": false,
@@ -215,6 +302,7 @@
       "name": "symbol",
       "outputs": [
         {
+          "internalType": "string",
           "name": "",
           "type": "string"
         }
@@ -224,53 +312,57 @@
       "type": "function"
     },
     {
-      "constant": false,
+      "constant": true,
       "inputs": [
         {
-          "name": "operator",
-          "type": "address"
-        },
-        {
-          "name": "_approved",
-          "type": "bool"
-        }
-      ],
-      "name": "setApprovalForAll",
-      "outputs": [],
-      "payable": false,
-      "stateMutability": "nonpayable",
-      "type": "function"
-    },
-    {
-      "constant": false,
-      "inputs": [
-        {
-          "name": "from",
-          "type": "address"
-        },
-        {
-          "name": "to",
-          "type": "address"
-        },
-        {
-          "name": "tokenId",
+          "internalType": "uint256",
+          "name": "index",
           "type": "uint256"
-        },
-        {
-          "name": "data",
-          "type": "bytes"
         }
       ],
-      "name": "safeTransferFrom",
-      "outputs": [],
+      "name": "tokenByIndex",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
       "payable": false,
-      "stateMutability": "nonpayable",
+      "stateMutability": "view",
       "type": "function"
     },
     {
       "constant": true,
       "inputs": [
         {
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "index",
+          "type": "uint256"
+        }
+      ],
+      "name": "tokenOfOwnerByIndex",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "uint256",
           "name": "tokenId",
           "type": "uint256"
         }
@@ -278,6 +370,7 @@
       "name": "tokenURI",
       "outputs": [
         {
+          "internalType": "string",
           "name": "",
           "type": "string"
         }
@@ -288,21 +381,13 @@
     },
     {
       "constant": true,
-      "inputs": [
-        {
-          "name": "owner",
-          "type": "address"
-        },
-        {
-          "name": "operator",
-          "type": "address"
-        }
-      ],
-      "name": "isApprovedForAll",
+      "inputs": [],
+      "name": "totalSupply",
       "outputs": [
         {
+          "internalType": "uint256",
           "name": "",
-          "type": "bool"
+          "type": "uint256"
         }
       ],
       "payable": false,
@@ -310,91 +395,50 @@
       "type": "function"
     },
     {
-      "anonymous": false,
+      "constant": false,
       "inputs": [
         {
-          "indexed": true,
+          "internalType": "address",
           "name": "from",
           "type": "address"
         },
         {
-          "indexed": true,
+          "internalType": "address",
           "name": "to",
           "type": "address"
         },
         {
-          "indexed": true,
+          "internalType": "uint256",
           "name": "tokenId",
           "type": "uint256"
         }
       ],
-      "name": "Transfer",
-      "type": "event"
-    },
-    {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": true,
-          "name": "owner",
-          "type": "address"
-        },
-        {
-          "indexed": true,
-          "name": "approved",
-          "type": "address"
-        },
-        {
-          "indexed": true,
-          "name": "tokenId",
-          "type": "uint256"
-        }
-      ],
-      "name": "Approval",
-      "type": "event"
-    },
-    {
-      "anonymous": false,
-      "inputs": [
-        {
-          "indexed": true,
-          "name": "owner",
-          "type": "address"
-        },
-        {
-          "indexed": true,
-          "name": "operator",
-          "type": "address"
-        },
-        {
-          "indexed": false,
-          "name": "approved",
-          "type": "bool"
-        }
-      ],
-      "name": "ApprovalForAll",
-      "type": "event"
+      "name": "transferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.8+commit.23d335f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"name\":\"operator\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenOfOwnerByIndex\",\"outputs\":[{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenByIndex\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"name\":\"owner\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"balance\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"operator\",\"type\":\"address\"},{\"name\":\"_approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"tokenId\",\"type\":\"uint256\"},{\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"}],\"devdoc\":{\"details\":\"See http://kips.klaytn.com/KIPs/kip-17-non_fungible_token\",\"methods\":{\"balanceOf(address)\":{\"details\":\"Returns the number of NFTs in `owner`'s account.\"},\"ownerOf(uint256)\":{\"details\":\"Returns the owner of the NFT specified by `tokenId`.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"Transfers a specific NFT (`tokenId`) from one account (`from`) to another (`to`).     * Requirements: - `from`, `to` cannot be zero. - `tokenId` must be owned by `from`. - If the caller is not `from`, it must be have been allowed to move this NFT by either `approve` or `setApproveForAll`.\"},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding [KIP-13 section](http://kips.klaytn.com/KIPs/kip-13-interface_query_standard#how-interface-identifiers-are-defined) to learn more about how these ids are created.     * This function call must use less than 30 000 gas.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"Transfers a specific NFT (`tokenId`) from one account (`from`) to another (`to`).     * Requirements: - If the caller is not `from`, it must be approved to move this NFT by either `approve` or `setApproveForAll`.\"}},\"title\":\"KIP-17 Non-Fungible Token Standard, full implementation interface\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17Full.sol\":\"IKIP17Full\"},\"evmVersion\":\"petersburg\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/gimseontae/Desktop/project/contract/contracts/introspection/IKIP13.sol\":{\"keccak256\":\"0xf7415711dbec40bc633af7d8cb5c3c0bc3d1ed97fd8c13f795a03eb3073ea219\",\"urls\":[\"bzzr://2c161a0e94debcd164c7a87e2c12c087ffefe24bc7a4a9f304f5d8ba39ed15a1\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17.sol\":{\"keccak256\":\"0x0b30e5fe64932d8b9343c7897ebb7a0ac15a15577ce5ec1f18c3ba4396120de0\",\"urls\":[\"bzzr://7027ab2da185a775cc0697e60a6d17db910959fa365c5337dce50d2bf380c4fc\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17Enumerable.sol\":{\"keccak256\":\"0x5a6a02f871bfcf213445ac1c3625af470cbd25599f915f2bbc0b7df0ed998031\",\"urls\":[\"bzzr://f613649522f60a170ab6e4cc32b2087cb29d6bfba77680797cfa5467ffc8c356\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17Full.sol\":{\"keccak256\":\"0x1b7b817a424b7afe68d94b1aa74f6306db06e56ee1ebb6bc8ae4a087b0ae5ee9\",\"urls\":[\"bzzr://b52e504b458a2b14b447d88c78a1abe284caf374ff2266b7dea87fe86f3e19ce\"]},\"/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17Metadata.sol\":{\"keccak256\":\"0xad2c2abcd4cb881620f297edcdf9cd491effc1ace2f12f468bf3546f940d1bf4\",\"urls\":[\"bzzr://f2de7f30fb22e7238dd752bbd1ac67648cc3f6236348a63d0224fbb659090d48\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"approved\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"bool\",\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"getApproved\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"ownerOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"operator\",\"type\":\"address\"},{\"internalType\":\"bool\",\"name\":\"_approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"symbol\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenByIndex\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"index\",\"type\":\"uint256\"}],\"name\":\"tokenOfOwnerByIndex\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"tokenURI\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"transferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"See http://kips.klaytn.com/KIPs/kip-17-non_fungible_token\",\"methods\":{\"balanceOf(address)\":{\"details\":\"Returns the number of NFTs in `owner`'s account.\"},\"ownerOf(uint256)\":{\"details\":\"Returns the owner of the NFT specified by `tokenId`.\"},\"safeTransferFrom(address,address,uint256)\":{\"details\":\"Transfers a specific NFT (`tokenId`) from one account (`from`) to another (`to`).     * Requirements: - `from`, `to` cannot be zero. - `tokenId` must be owned by `from`. - If the caller is not `from`, it must be have been allowed to move this NFT by either `approve` or `setApproveForAll`.\"},\"supportsInterface(bytes4)\":{\"details\":\"Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding [KIP-13 section](http://kips.klaytn.com/KIPs/kip-13-interface_query_standard#how-interface-identifiers-are-defined) to learn more about how these ids are created.     * This function call must use less than 30 000 gas.\"},\"transferFrom(address,address,uint256)\":{\"details\":\"Transfers a specific NFT (`tokenId`) from one account (`from`) to another (`to`).     * Requirements: - If the caller is not `from`, it must be approved to move this NFT by either `approve` or `setApproveForAll`.\"}},\"title\":\"KIP-17 Non-Fungible Token Standard, full implementation interface\"},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/token/KIP17/IKIP17Full.sol\":\"IKIP17Full\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/introspection/IKIP13.sol\":{\"keccak256\":\"0xf7415711dbec40bc633af7d8cb5c3c0bc3d1ed97fd8c13f795a03eb3073ea219\",\"urls\":[\"bzz-raw://c3583b6a39425cc359116200869b24b50c2293c6e68d09c4d4b804861b431ae0\",\"dweb:/ipfs/QmWZWD7oEtz7QbM5AmUtrbZpDVkxzeX8JGcVkUVmvRRaVa\"]},\"project:/contracts/token/KIP17/IKIP17.sol\":{\"keccak256\":\"0x0b30e5fe64932d8b9343c7897ebb7a0ac15a15577ce5ec1f18c3ba4396120de0\",\"urls\":[\"bzz-raw://6acdc475b0e3ef3844ebd4fe82d4c7339dc396c88ec9f7e5be74cab763c3a321\",\"dweb:/ipfs/QmVvB1y1NLSjooVs5V47YGtESVQ5w3B5j2Md32N3EmRouh\"]},\"project:/contracts/token/KIP17/IKIP17Enumerable.sol\":{\"keccak256\":\"0x5a6a02f871bfcf213445ac1c3625af470cbd25599f915f2bbc0b7df0ed998031\",\"urls\":[\"bzz-raw://0cee69ae8a3e102f4ec137a1e43a1d4486e8c014fd8d82362031889ec94e7230\",\"dweb:/ipfs/QmcAVHNgpxhttC6ucA2JL53WtiLgphEPX8m7KDKTycHxAi\"]},\"project:/contracts/token/KIP17/IKIP17Full.sol\":{\"keccak256\":\"0x1b7b817a424b7afe68d94b1aa74f6306db06e56ee1ebb6bc8ae4a087b0ae5ee9\",\"urls\":[\"bzz-raw://f7f2089a8d61b28ee9a8aad5e71b38f5dd568d3d22f89ec0f31a9e02bd1114ac\",\"dweb:/ipfs/QmWaVqXPiT5VkaPi97fJvg31UmcECxZeQHsTp748ETnUdk\"]},\"project:/contracts/token/KIP17/IKIP17Metadata.sol\":{\"keccak256\":\"0xad2c2abcd4cb881620f297edcdf9cd491effc1ace2f12f468bf3546f940d1bf4\",\"urls\":[\"bzz-raw://a3b5f7a0bfb8ebfb163d2f9a8aaf773bf9d2ac5a729ffcf4bb52660be3cfff28\",\"dweb:/ipfs/QmerMoavH88mYcnSxL8dDcbiGdPeSpXFU4zAwjLqx39kCu\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.5.0;\n\nimport \"./IKIP17.sol\";\nimport \"./IKIP17Enumerable.sol\";\nimport \"./IKIP17Metadata.sol\";\n\n/**\n * @title KIP-17 Non-Fungible Token Standard, full implementation interface\n * @dev See http://kips.klaytn.com/KIPs/kip-17-non_fungible_token\n */\ncontract IKIP17Full is IKIP17, IKIP17Enumerable, IKIP17Metadata {\n    // solhint-disable-previous-line no-empty-blocks\n}\n",
-  "sourcePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17Full.sol",
+  "sourcePath": "/Users/humblefirm/Github/contract/contracts/token/KIP17/IKIP17Full.sol",
   "ast": {
-    "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17Full.sol",
+    "absolutePath": "project:/contracts/token/KIP17/IKIP17Full.sol",
     "exportedSymbols": {
       "IKIP17Full": [
-        4605
+        4647
       ]
     },
-    "id": 4606,
+    "id": 4648,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 4595,
+        "id": 4637,
         "literals": [
           "solidity",
           "^",
@@ -402,38 +446,38 @@
           ".0"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:49"
+        "src": "0:23:51"
       },
       {
-        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17.sol",
+        "absolutePath": "project:/contracts/token/KIP17/IKIP17.sol",
         "file": "./IKIP17.sol",
-        "id": 4596,
+        "id": 4638,
         "nodeType": "ImportDirective",
-        "scope": 4606,
-        "sourceUnit": 4567,
-        "src": "25:22:49",
+        "scope": 4648,
+        "sourceUnit": 4609,
+        "src": "25:22:51",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17Enumerable.sol",
+        "absolutePath": "project:/contracts/token/KIP17/IKIP17Enumerable.sol",
         "file": "./IKIP17Enumerable.sol",
-        "id": 4597,
+        "id": 4639,
         "nodeType": "ImportDirective",
-        "scope": 4606,
-        "sourceUnit": 4594,
-        "src": "48:32:49",
+        "scope": 4648,
+        "sourceUnit": 4636,
+        "src": "48:32:51",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
-        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17Metadata.sol",
+        "absolutePath": "project:/contracts/token/KIP17/IKIP17Metadata.sol",
         "file": "./IKIP17Metadata.sol",
-        "id": 4598,
+        "id": 4640,
         "nodeType": "ImportDirective",
-        "scope": 4606,
-        "sourceUnit": 4629,
-        "src": "81:30:49",
+        "scope": 4648,
+        "sourceUnit": 4671,
+        "src": "81:30:51",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -443,227 +487,256 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4599,
+              "id": 4641,
               "name": "IKIP17",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4566,
-              "src": "286:6:49",
+              "referencedDeclaration": 4608,
+              "src": "286:6:51",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IKIP17_$4566",
+                "typeIdentifier": "t_contract$_IKIP17_$4608",
                 "typeString": "contract IKIP17"
               }
             },
-            "id": 4600,
+            "id": 4642,
             "nodeType": "InheritanceSpecifier",
-            "src": "286:6:49"
+            "src": "286:6:51"
           },
           {
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4601,
+              "id": 4643,
               "name": "IKIP17Enumerable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4593,
-              "src": "294:16:49",
+              "referencedDeclaration": 4635,
+              "src": "294:16:51",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IKIP17Enumerable_$4593",
+                "typeIdentifier": "t_contract$_IKIP17Enumerable_$4635",
                 "typeString": "contract IKIP17Enumerable"
               }
             },
-            "id": 4602,
+            "id": 4644,
             "nodeType": "InheritanceSpecifier",
-            "src": "294:16:49"
+            "src": "294:16:51"
           },
           {
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 4603,
+              "id": 4645,
               "name": "IKIP17Metadata",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4628,
-              "src": "312:14:49",
+              "referencedDeclaration": 4670,
+              "src": "312:14:51",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IKIP17Metadata_$4628",
+                "typeIdentifier": "t_contract$_IKIP17Metadata_$4670",
                 "typeString": "contract IKIP17Metadata"
               }
             },
-            "id": 4604,
+            "id": 4646,
             "nodeType": "InheritanceSpecifier",
-            "src": "312:14:49"
+            "src": "312:14:51"
           }
         ],
         "contractDependencies": [
           411,
-          4566,
-          4593,
-          4628
+          4608,
+          4635,
+          4670
         ],
         "contractKind": "contract",
         "documentation": "@title KIP-17 Non-Fungible Token Standard, full implementation interface\n@dev See http://kips.klaytn.com/KIPs/kip-17-non_fungible_token",
         "fullyImplemented": false,
-        "id": 4605,
+        "id": 4647,
         "linearizedBaseContracts": [
-          4605,
-          4628,
-          4593,
-          4566,
+          4647,
+          4670,
+          4635,
+          4608,
           411
         ],
         "name": "IKIP17Full",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 4606,
-        "src": "263:120:49"
+        "scope": 4648,
+        "src": "263:120:51"
       }
     ],
-    "src": "0:384:49"
+    "src": "0:384:51"
   },
   "legacyAST": {
-    "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17Full.sol",
-    "exportedSymbols": {
-      "IKIP17Full": [
-        4605
-      ]
+    "attributes": {
+      "absolutePath": "project:/contracts/token/KIP17/IKIP17Full.sol",
+      "exportedSymbols": {
+        "IKIP17Full": [
+          4647
+        ]
+      }
     },
-    "id": 4606,
-    "nodeType": "SourceUnit",
-    "nodes": [
+    "children": [
       {
-        "id": 4595,
-        "literals": [
-          "solidity",
-          "^",
-          "0.5",
-          ".0"
-        ],
-        "nodeType": "PragmaDirective",
-        "src": "0:23:49"
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".0"
+          ]
+        },
+        "id": 4637,
+        "name": "PragmaDirective",
+        "src": "0:23:51"
       },
       {
-        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17.sol",
-        "file": "./IKIP17.sol",
-        "id": 4596,
-        "nodeType": "ImportDirective",
-        "scope": 4606,
-        "sourceUnit": 4567,
-        "src": "25:22:49",
-        "symbolAliases": [],
-        "unitAlias": ""
+        "attributes": {
+          "SourceUnit": 4609,
+          "absolutePath": "project:/contracts/token/KIP17/IKIP17.sol",
+          "file": "./IKIP17.sol",
+          "scope": 4648,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 4638,
+        "name": "ImportDirective",
+        "src": "25:22:51"
       },
       {
-        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17Enumerable.sol",
-        "file": "./IKIP17Enumerable.sol",
-        "id": 4597,
-        "nodeType": "ImportDirective",
-        "scope": 4606,
-        "sourceUnit": 4594,
-        "src": "48:32:49",
-        "symbolAliases": [],
-        "unitAlias": ""
+        "attributes": {
+          "SourceUnit": 4636,
+          "absolutePath": "project:/contracts/token/KIP17/IKIP17Enumerable.sol",
+          "file": "./IKIP17Enumerable.sol",
+          "scope": 4648,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 4639,
+        "name": "ImportDirective",
+        "src": "48:32:51"
       },
       {
-        "absolutePath": "/Users/gimseontae/Desktop/project/contract/contracts/token/KIP17/IKIP17Metadata.sol",
-        "file": "./IKIP17Metadata.sol",
-        "id": 4598,
-        "nodeType": "ImportDirective",
-        "scope": 4606,
-        "sourceUnit": 4629,
-        "src": "81:30:49",
-        "symbolAliases": [],
-        "unitAlias": ""
+        "attributes": {
+          "SourceUnit": 4671,
+          "absolutePath": "project:/contracts/token/KIP17/IKIP17Metadata.sol",
+          "file": "./IKIP17Metadata.sol",
+          "scope": 4648,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 4640,
+        "name": "ImportDirective",
+        "src": "81:30:51"
       },
       {
-        "baseContracts": [
+        "attributes": {
+          "contractDependencies": [
+            411,
+            4608,
+            4635,
+            4670
+          ],
+          "contractKind": "contract",
+          "documentation": "@title KIP-17 Non-Fungible Token Standard, full implementation interface\n@dev See http://kips.klaytn.com/KIPs/kip-17-non_fungible_token",
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            4647,
+            4670,
+            4635,
+            4608,
+            411
+          ],
+          "name": "IKIP17Full",
+          "nodes": [
+            null
+          ],
+          "scope": 4648
+        },
+        "children": [
           {
-            "arguments": null,
-            "baseName": {
-              "contractScope": null,
-              "id": 4599,
-              "name": "IKIP17",
-              "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4566,
-              "src": "286:6:49",
-              "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IKIP17_$4566",
-                "typeString": "contract IKIP17"
-              }
+            "attributes": {
+              "arguments": null
             },
-            "id": 4600,
-            "nodeType": "InheritanceSpecifier",
-            "src": "286:6:49"
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IKIP17",
+                  "referencedDeclaration": 4608,
+                  "type": "contract IKIP17"
+                },
+                "id": 4641,
+                "name": "UserDefinedTypeName",
+                "src": "286:6:51"
+              }
+            ],
+            "id": 4642,
+            "name": "InheritanceSpecifier",
+            "src": "286:6:51"
           },
           {
-            "arguments": null,
-            "baseName": {
-              "contractScope": null,
-              "id": 4601,
-              "name": "IKIP17Enumerable",
-              "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4593,
-              "src": "294:16:49",
-              "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IKIP17Enumerable_$4593",
-                "typeString": "contract IKIP17Enumerable"
-              }
+            "attributes": {
+              "arguments": null
             },
-            "id": 4602,
-            "nodeType": "InheritanceSpecifier",
-            "src": "294:16:49"
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IKIP17Enumerable",
+                  "referencedDeclaration": 4635,
+                  "type": "contract IKIP17Enumerable"
+                },
+                "id": 4643,
+                "name": "UserDefinedTypeName",
+                "src": "294:16:51"
+              }
+            ],
+            "id": 4644,
+            "name": "InheritanceSpecifier",
+            "src": "294:16:51"
           },
           {
-            "arguments": null,
-            "baseName": {
-              "contractScope": null,
-              "id": 4603,
-              "name": "IKIP17Metadata",
-              "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 4628,
-              "src": "312:14:49",
-              "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IKIP17Metadata_$4628",
-                "typeString": "contract IKIP17Metadata"
-              }
+            "attributes": {
+              "arguments": null
             },
-            "id": 4604,
-            "nodeType": "InheritanceSpecifier",
-            "src": "312:14:49"
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "IKIP17Metadata",
+                  "referencedDeclaration": 4670,
+                  "type": "contract IKIP17Metadata"
+                },
+                "id": 4645,
+                "name": "UserDefinedTypeName",
+                "src": "312:14:51"
+              }
+            ],
+            "id": 4646,
+            "name": "InheritanceSpecifier",
+            "src": "312:14:51"
           }
         ],
-        "contractDependencies": [
-          411,
-          4566,
-          4593,
-          4628
-        ],
-        "contractKind": "contract",
-        "documentation": "@title KIP-17 Non-Fungible Token Standard, full implementation interface\n@dev See http://kips.klaytn.com/KIPs/kip-17-non_fungible_token",
-        "fullyImplemented": false,
-        "id": 4605,
-        "linearizedBaseContracts": [
-          4605,
-          4628,
-          4593,
-          4566,
-          411
-        ],
-        "name": "IKIP17Full",
-        "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 4606,
-        "src": "263:120:49"
+        "id": 4647,
+        "name": "ContractDefinition",
+        "src": "263:120:51"
       }
     ],
-    "src": "0:384:49"
+    "id": 4648,
+    "name": "SourceUnit",
+    "src": "0:384:51"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.5.8+commit.23d335f2.Emscripten.clang"
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.11",
-  "updatedAt": "2021-11-18T17:17:08.610Z",
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-12-28T17:12:13.827Z",
   "devdoc": {
     "details": "See http://kips.klaytn.com/KIPs/kip-17-non_fungible_token",
     "methods": {

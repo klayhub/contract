@@ -1,4 +1,4 @@
-pragma solidity 0.5.8;
+pragma solidity 0.5.16;
 
 // import "openzeppelin-solidity/contracts/math/Math.sol";
 import "../../math/SafeMath.sol";
@@ -14,7 +14,7 @@ import "./utils.sol";
 /**
  * Staking Token Wrapper
  */
-pragma solidity 0.5.8;
+pragma solidity 0.5.16;
 
 contract TokenWrapper is Ownable, utils {
     using SafeMath for uint256;
@@ -66,7 +66,7 @@ contract TokenWrapper is Ownable, utils {
 /**
  *  Pool
  */
-pragma solidity 0.5.8;
+pragma solidity 0.5.16;
 
 contract NFTPool is TokenWrapper {
     using SafeMath for uint256;
