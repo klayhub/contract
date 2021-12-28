@@ -20,18 +20,19 @@ contract MarketPlace is Ownable {
     mapping (address => StructuredLinkedList.List) ListOfOwner;
 
     
-    IKIP7 public KUSDT=IKIP7(0xceE8FAF64bB97a73bb51E115Aa89C17FfA8dD167);
+    IKIP7 private KUSDT=IKIP7(0xceE8FAF64bB97a73bb51E115Aa89C17FfA8dD167);
 
-    uint256 public cumulativeSales;
-    mapping (uint256 => address payable) public OwnerById;
-    mapping (uint256 => address) public TokenById;
-    mapping (uint256 => uint256) public TokenIdById;
-    mapping (uint256 => uint256) public PriceById;
-    mapping (uint256 => bool) public IsKUSDTById;
+    uint256 private cumulativeSales;
+    mapping (uint256 => address payable) private OwnerById;
+    mapping (uint256 => address) private TokenById;
+    mapping (uint256 => uint256) private TokenIdById;
+    mapping (uint256 => uint256) private PriceById;
+    mapping (uint256 => bool) private IsKUSDTById;
 
-
-
- 
+    address payable private Foundation;
+    uint256 private FoundationFeeRate;
+    mapping (address => address payable) private OriginatorByToken;
+    mapping (address => uint256) private OriginatorFeeRateByToken;
 
     // Sell the NFT (Klay or USDT)
     function Sell(address _token, uint256 _tokenId, bool _isKUSDT, uint256 _price) public { 
@@ -68,11 +69,20 @@ contract MarketPlace is Ownable {
         ListOfOwner[msg.sender].remove(id);
 
         // Purchase the NFT
-        if(IsKUSDTById[id]) 
-            IKIP7(TokenById[id]).transferFrom(msg.sender, OwnerById[id], TokenIdById[id]);
+        uint256 price = PriceById[id];
+        uint256 FeeOriginator = price.div(10000).mul(OriginatorFeeRateByToken[TokenById[id]]);
+        uint256 FeeFoundation = price.div(10000).mul(FoundationFeeRate); 
+        uint256 FeeTotal = FeeOriginator + FeeFoundation;
+        if(IsKUSDTById[id]){
+            if(FeeOriginator>0) IKIP7(TokenById[id]).transferFrom(msg.sender, OriginatorByToken[TokenById[id]], FeeOriginator);
+            if(FeeFoundation>0) IKIP7(TokenById[id]).transferFrom(msg.sender, Foundation, FeeFoundation);
+            IKIP7(TokenById[id]).transferFrom(msg.sender, OwnerById[id], price.sub(FeeTotal));
+        }
         else {
             require(msg.value == PriceById[id], "You must pay the price");
-            OwnerById[id].transfer(msg.value);
+            if(FeeOriginator>0) OriginatorByToken[TokenById[id]].transfer(FeeOriginator);
+            if(FeeFoundation>0) Foundation.transfer(FeeFoundation);
+            OwnerById[id].transfer(price.sub(FeeTotal));
         }
 
     }
@@ -124,6 +134,26 @@ contract MarketPlace is Ownable {
 
     function Addr2uint(address Addr) internal pure returns(uint256) {
         return uint256(uint160(Addr));
+    }
+
+    // set foundation fee rate
+    function SetFoundationFeeRate(uint256 _foundationFeeRate) public onlyOwner {
+        FoundationFeeRate = _foundationFeeRate;
+    }
+
+    // set foundation address
+    function SetFoundation(address payable _foundation) public onlyOwner {
+        Foundation = _foundation;
+    }
+
+    // set originator fee rate
+    function SetOriginatorFeeRate(address _token, uint256 _originatorFeeRate) public onlyOwner {
+        OriginatorFeeRateByToken[_token] = _originatorFeeRate;
+    }
+
+    // set originator address
+    function SetOriginator(address _token, address payable _originator) public onlyOwner {
+        OriginatorByToken[_token] = _originator;
     }
     
 }
